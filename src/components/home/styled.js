@@ -1,24 +1,31 @@
 import styled from 'styled-components';
 
-export const HomeContainer = styled.div``;
+export const WarningContainer = styled.div`
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+`;
 
-export const TitleContainer = styled.div`
-  display: none;
-  @media only screen and (max-width: 600px) {
-    background-size: 350%;
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0rem 2rem;
-    color: ${(props) => props.theme.color_primary};
+export const IntroContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 10%;
+  justify-content: center;
+  align-items: center;
+  img {
+    display: block;
+    max-width: 200px;
+    width: auto;
+    height: auto;
+    border-radius: 30%;
   }
 `;
 
-export const TitleText = styled.h1`
-  @media only screen and (max-width: 600px) {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 2em;
-  }
+export const IntroTitlesContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const WorkContainer = styled.div`
+  padding: 1rem 0;
 `;

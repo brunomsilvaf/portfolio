@@ -1,7 +1,120 @@
 {
   "translations": {
-    "home": {
-      "title": "Olá!"
+    "role": "Engenheiro de Software",
+    "profile": "By pursuing a career as a software engineer, I had contact with different IT companies, meeting people from all over the world.<br/><br/>Having worked in a fast-moving environment on a few projects around the Dutch pension administration system, I was able to develop crucial technical, flexibility and adaptability skills. Looking for different challenges, I joined a cloud contact center company, working with hundreds of top-notch engineers to deliver the best innovative solutions to the market.<br/><br/>Over the past 5 years, I have worked with many different technologies, with particular focus on the Java language and its best frameworks and practices. As a team player, I believe teamwork and positivity always bring the best results.",
+    "work-experience": {
+      "title": "Work Experience",
+      "conferences": "JNation 2022",
+      "diconium": {
+        "role": "Software Engineer",
+        "title": "diconium",
+        "date": "Nov 2023 - Present",
+        "summary": "",
+        "details": [],
+        "skills": ["Java", "Spring"]
+      },
+      "td": {
+        "role": "Software Engineer",
+        "title": "Talkdesk",
+        "date": "Jul 2021 - May 2023",
+        "summary": "Workforce Engagement and Management solutions for contact  centers.",
+        "details": [
+          "Development of core services for an event-driven microservice architecture using Java 17 and Quarkus",
+          "Development of a multi-storage solution in Java and Ruby and integration with Azure Storage."
+        ],
+        "skills": [
+          "Java",
+          "Quarkus",
+          "Docker",
+          "Git",
+          "GitHub",
+          "Azure Storage"
+        ]
+      },
+      "CGI": {
+        "role": "Software Developer",
+        "title": "CGI",
+        "date": "Jan 2021 - Jun 2021",
+        "summary": "Acquisition of RiskCo by a consortium which includes CGI.<br/><be/>Same responsibilities as in the previous role.",
+        "details": []
+      },
+      "riskco": {
+        "role": "Software Developer",
+        "title": "InAdmin RiskCo",
+        "date": "Feb 2018 - Dec 2020",
+        "summary": "Administrative solutions for Dutch pension institutions. Fast-moving environment requiring a great sense of resilience and adaptability to multiple technologies and projects.",
+        "details": [
+          "Development of client-server components for a PaaS system, mainly based on Java, Spring Boot and ReactJS with a GraphQL API, to visualize and treat of big sets of pension data",
+          "Development and maintenance of Groovy libraries",
+          "Customer support to a client-server Windows based application (C#) used in the calculation of theoretical prices for bank products",
+          "Customer support for mobile (Android and iOS) applications and maintenance of existing Excel Macros",
+          "Implementation of BPMN models to be integrated in the PaaS system"
+        ],
+        "skills": [
+          "Java",
+          "Spring Boot",
+          "Docker",
+          "ReactJS",
+          "GraphQL",
+          "Groovy",
+          "C#"
+        ]
+      }
+    },
+    "soft-skills": {},
+    "education": {
+      "title": "Education",
+      "languages": {
+        "pt": {
+          "title": "Portuguese",
+          "level": "native"
+        },
+        "en": {
+          "title": "English",
+          "level": "fluent"
+        },
+        "de": {
+          "title": "German",
+          "level": "beginner"
+        }
+      },
+      "masters": {
+        "title": "Masters in Electrical and Computer Engineering",
+        "local": "FCTUC - University of Coimbra",
+        "date": "Sep 2012 - Sep 2017",
+        "details": [
+          "Dissertation: Fusion of inertial data in industrial AGVs",
+          "Specialization in Automation",
+          "3% best students award 2012/2013"
+        ]
+      },
+      "curricular_internship": {
+        "title": "Curricular Internship",
+        "local": "Active Space Technologies",
+        "date": "March 2017 - August 2017",
+        "details": [
+          "Firmware development and hardware design for an inertial system to assist in the navigation of industrial AGVs"
+        ]
+      },
+      "summer_internship": {
+        "title": "Summer Internship",
+        "local": "Active Space Technologies",
+        "date": "July 2016 - Sep 2016",
+        "details": [
+          "Software development for a Pick & Place machine using QT Creator"
+        ]
+      }
+    },
+    "associativism": {
+      "title": "Associativism",
+      "description": "Throughout my academic path, I have participated in many editions of engineering and robotics competitions, both as a participant and as collaborator: Bot Olympics and EBEC Coimbra. I have also been a board member of the IEEE UC Student Branch, organizing many workshops and the 2016 Leadership Camp.<br/><br/>Besides engineering associations and competitions, I have joined  a university choir (CMUC) where I was the vice president for a year, growing many associative and leadership competencies.<br/><br/> Ocasionally, I participate in volunteering activities, such as volunteering at a local cat shelter and in the restoration of the native forest of Serra do Bussaco. "
+    },
+    "hobbies": {
+      "title": "Hobbies",
+      "choir": "",
+      "padel": "",
+      "boardgames": "",
+      "editing": ""
     }
   }
 }

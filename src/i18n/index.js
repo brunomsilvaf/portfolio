@@ -34,7 +34,7 @@ const resources = languages.reduce(
 
 const i18nConfig = {
   resources,
-  fallbackLng: 'pt-PT', // default language if the browser cannot detect automatically
+  fallbackLng: 'en-GB', // default language if the browser cannot detect automatically
   defaultNS: 'translations' // default namespace
 };
 
