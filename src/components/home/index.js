@@ -5,17 +5,12 @@ import {
   PageSubTitle,
   SectionContainer,
   SectionTitle,
-  SubTitle,
   Text
 } from '../../theme/GlobalStyles';
-import {
-  IntroContainer,
-  IntroTitlesContainer,
-  WarningContainer,
-  WorkContainer
-} from './styled';
+import { IntroContainer, IntroTitlesContainer, WorkContainer } from './styled';
 import Translator from '../../i18n/Translator';
 import ProfilePhoto from '../../assets/images/profile_photo.jpg';
+import WorkExperience from './work-experience';
 
 export default function MainPage() {
   return (
@@ -30,65 +25,22 @@ export default function MainPage() {
         </IntroTitlesContainer>
       </IntroContainer>
       <hr />
-
-      <WarningContainer>
-        <PageTitle>Work in progress... 08/02/24</PageTitle>
-      </WarningContainer>
       <SectionContainer id="biography">
         <Text>
           <Translator path="profile" />
         </Text>
       </SectionContainer>
+      <hr />
 
       <SectionContainer id="work-experience">
         <SectionTitle>
           <Translator path="work-experience.title" />
         </SectionTitle>
         <WorkContainer>
-          <SubTitle>
-            <Translator path="work-experience.diconium.title" />
-          </SubTitle>
-          <SubTitle>
-            <Translator path="work-experience.diconium.date" />
-          </SubTitle>
-          <Text>
-            <Translator path="work-experience.diconium.summary" />
-          </Text>
-        </WorkContainer>
-        <WorkContainer>
-          <SubTitle>
-            <Translator path="work-experience.td.title" />
-          </SubTitle>
-          <SubTitle>
-            <Translator path="work-experience.td.date" />
-          </SubTitle>
-          <Text>
-            <Translator path="work-experience.td.summary" />
-          </Text>
-        </WorkContainer>
-        <WorkContainer>
-          <SubTitle>
-            <Translator path="work-experience.cgi.title" />
-          </SubTitle>
-          <SubTitle>
-            <Translator path="work-experience.cgi.date" />
-          </SubTitle>
-          <Text>
-            <Translator path="work-experience.cgi.summary" />
-          </Text>
-        </WorkContainer>
-        <WorkContainer>
-          <SubTitle>
-            <Translator path="work-experience.riskco.title" />
-          </SubTitle>
-          <SubTitle>
-            <Translator path="work-experience.riskco.date" />
-          </SubTitle>
-          <Text>
-            <Translator path="work-experience.riskco.summary" />
-          </Text>
+          <WorkExperience />
         </WorkContainer>
       </SectionContainer>
+
       <SectionContainer id="education">
         <SectionTitle>
           <Translator path="education.title" />

@@ -1,11 +1,5 @@
 import styled from 'styled-components';
 
-export const WarningContainer = styled.div`
-  justify-content: center;
-  align-items: center;
-  background-color: yellow;
-`;
-
 export const IntroContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -27,5 +21,9 @@ export const IntroTitlesContainer = styled.div`
 `;
 
 export const WorkContainer = styled.div`
-  padding: 1rem 0;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
 `;
+
+export const LogoContainer = styled.img``;

@@ -4,24 +4,21 @@
     "profile": "By pursuing a career as a software engineer, I had contact with different IT companies, meeting people from all over the world.<br/><br/>Having worked in a fast-moving environment on a few projects around the Dutch pension administration system, I was able to develop crucial technical, flexibility and adaptability skills. Looking for different challenges, I joined a cloud contact center company, working with hundreds of top-notch engineers to deliver the best innovative solutions to the market.<br/><br/>Over the past 5 years, I have worked with many different technologies, with particular focus on the Java language and its best frameworks and practices. As a team player, I believe teamwork and positivity always bring the best results.",
     "work-experience": {
       "title": "Work Experience",
-      "conferences": "JNation 2022",
+      "conferences": ["JNation 2022", "JNation 2024"],
       "diconium": {
         "role": "Software Engineer",
         "title": "diconium",
         "date": "Nov 2023 - Present",
         "summary": "",
-        "details": [],
-        "skills": ["Java", "Spring"]
+        "details": "",
+        "skills": ["Java", "Spring", "Keycloak"]
       },
-      "td": {
+      "talkdesk": {
         "role": "Software Engineer",
         "title": "Talkdesk",
         "date": "Jul 2021 - May 2023",
         "summary": "Workforce Engagement and Management solutions for contact  centers.",
-        "details": [
-          "Development of core services for an event-driven microservice architecture using Java 17 and Quarkus",
-          "Development of a multi-storage solution in Java and Ruby and integration with Azure Storage."
-        ],
+        "details": "Development of core services for an event-driven microservice architecture using Java 17 and Quarkus; <br/><br/> Development of a multi-storage solution in Java and Ruby and integration with Azure Storage.",
         "skills": [
           "Java",
           "Quarkus",
@@ -36,20 +33,14 @@
         "title": "CGI",
         "date": "Jan 2021 - Jun 2021",
         "summary": "Acquisition of RiskCo by a consortium which includes CGI.<br/><br/>Same responsibilities as in the previous role.",
-        "details": []
+        "details": ""
       },
       "riskco": {
         "role": "Software Developer",
         "title": "InAdmin RiskCo",
         "date": "Feb 2018 - Dec 2020",
         "summary": "Administrative solutions for Dutch pension institutions. Fast-moving environment requiring a great sense of resilience and adaptability to multiple technologies and projects.",
-        "details": [
-          "Development of client-server components for a PaaS system, mainly based on Java, Spring Boot and ReactJS with a GraphQL API, to visualize and treat of big sets of pension data",
-          "Development and maintenance of Groovy libraries",
-          "Customer support to a client-server Windows based application (C#) used in the calculation of theoretical prices for bank products",
-          "Customer support for mobile (Android and iOS) applications and maintenance of existing Excel Macros",
-          "Implementation of BPMN models to be integrated in the PaaS system"
-        ],
+        "details": "Development of client-server components for a PaaS system, mainly based on Java, Spring Boot and ReactJS with a GraphQL API, to visualize and treat of big sets of pension data; <br/><br/> Development and maintenance of Groovy libraries; <br/><br/>Customer support to a client-server Windows based application (C#) used in the calculation of theoretical prices for bank products; <br/><br/>Customer support for mobile (Android and iOS) applications and maintenance of existing Excel Macros; <br/><br/>Implementation of BPMN models to be integrated in the PaaS system",
         "skills": [
           "Java",
           "Spring Boot",
