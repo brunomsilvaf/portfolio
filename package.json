@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://brunomsilvaf.github.io/portfolio",
   "dependencies": {
-    "@emotion/react": "^11.13.3",
+    "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^6.3.1",
     "@mui/lab": "^6.0.0-beta.10",
