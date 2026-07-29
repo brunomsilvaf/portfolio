@@ -26,7 +26,7 @@ export default function Header() {
       <NavigationContainer>
         <NavigationItems>
           {NavMenuItems.map((menu) => (
-            <Link to={menu.url}>
+            <Link key={menu.id} to={menu.url}>
               <Translator path={menu.title} />
             </Link>
           ))}
