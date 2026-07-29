@@ -119,7 +119,8 @@ export const SectionContainer = styled.section`
   scroll-margin-top: 90px;
   width: min(100%, ${(props) => props.theme.content_width});
   margin: 0 auto;
-  padding: ${(props) => props.theme.space_section} ${(props) => props.theme.space_md};
+  padding: ${(props) => props.theme.space_section}
+    ${(props) => props.theme.space_md};
 `;
 
 export const SectionTitle = styled.h3`

@@ -5,7 +5,9 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   opacity: 0;
   transform: translateY(24px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
   will-change: opacity, transform;
 
   &.is-visible {

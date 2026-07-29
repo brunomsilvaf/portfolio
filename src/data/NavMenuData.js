@@ -21,16 +21,21 @@ export default [
   },
   {
     id: 5,
+    title: 'conferences.title',
+    url: '/#conferences'
+  },
+  {
+    id: 6,
     title: 'associativism.title',
     url: '/#associativism'
   },
   {
-    id: 6,
+    id: 7,
     title: 'hobbies.title',
     url: '/#hobbies'
   },
   {
-    id: 7,
+    id: 8,
     title: 'contact.title',
     url: '/#contact'
   }

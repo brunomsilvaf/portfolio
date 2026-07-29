@@ -12,12 +12,14 @@ export const languages = [
   {
     language: 'pt',
     locale: 'pt-PT',
+    label: 'Português',
     img: PTFlag,
     translation: ptPtTranslations
   },
   {
     language: 'en',
     locale: 'en-GB',
+    label: 'English',
     img: ENFlag,
     translation: enGbTranslations
   }
@@ -54,5 +56,16 @@ const i18nConfig = {
 };
 
 i18n.use(LanguageDetector).use(initReactI18next).init(i18nConfig);
+
+// Keep the document's <html lang> attribute in sync with the active language
+// for accessibility (screen readers) and SEO.
+const syncHtmlLang = (lng) => {
+  if (typeof document !== 'undefined' && lng) {
+    document.documentElement.lang = lng;
+  }
+};
+
+syncHtmlLang(i18n.resolvedLanguage || i18n.language);
+i18n.on('languageChanged', syncHtmlLang);
 
 export default i18n;

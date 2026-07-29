@@ -52,7 +52,7 @@ export default function WorkExperience() {
             <TimelineContent sx={{ pb: '40px' }}>
               <LogoContainer
                 src={job.logo}
-                alt={`${job.key}-logo`}
+                alt={t(`${base}.title`)}
                 height={job.height}
                 loading="lazy"
                 decoding="async"
@@ -98,4 +98,3 @@ export default function WorkExperience() {
     </Timeline>
   );
 }
-

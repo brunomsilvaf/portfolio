@@ -8,7 +8,8 @@ export const HeroSection = styled.section`
   text-align: center;
   gap: ${(props) => props.theme.space_md};
   padding: calc(
-      ${(props) => props.theme.header_height} + ${(props) => props.theme.space_xl}
+      ${(props) => props.theme.header_height} +
+        ${(props) => props.theme.space_xl}
     )
     ${(props) => props.theme.space_md} ${(props) => props.theme.space_xl};
   background: ${(props) => props.theme.color_hero_gradient};
@@ -88,6 +89,29 @@ export const ProjectsGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.5rem;
+`;
+
+export const ConferencesGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+`;
+
+export const ConferenceCard = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  background: ${(props) => props.theme.color_surface};
+  border: 1px solid ${(props) => props.theme.color_border};
+  border-radius: 12px;
+  svg {
+    color: ${(props) => props.theme.color_accent};
+  }
+`;
+
+export const ConferenceName = styled.h4`
+  text-transform: none;
 `;
 
 export const HobbiesGrid = styled.div`

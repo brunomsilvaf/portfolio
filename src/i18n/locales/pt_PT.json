@@ -18,7 +18,6 @@
     },
     "work-experience": {
       "title": "Experiência Profissional",
-      "conferences": ["JNation 2022", "JNation 2024"],
       "diconium": {
         "role": "Engenheiro de Software",
         "title": "diconium",
@@ -143,22 +142,13 @@
           "tags": ["React", "Vite", "styled-components", "i18next"],
           "repo": "https://github.com/brunomsilvaf/portfolio",
           "demo": "https://brunomsilvaf.github.io/portfolio/"
-        },
-        {
-          "title": "API de Gestão de Tarefas",
-          "description": "Uma API REST de exemplo para gerir tarefas e projetos, com autenticação, controlo de acessos por perfis e uma especificação OpenAPI documentada.",
-          "tags": ["Java", "Spring Boot", "PostgreSQL", "Docker"],
-          "repo": "https://github.com/brunomsilvaf",
-          "demo": ""
-        },
-        {
-          "title": "Aplicação de Chat em Tempo Real",
-          "description": "Uma aplicação de mensagens em tempo real de exemplo, com salas, indicadores de presença e histórico de mensagens, suportada por WebSockets.",
-          "tags": ["React", "Node.js", "WebSocket", "MongoDB"],
-          "repo": "https://github.com/brunomsilvaf",
-          "demo": ""
         }
       ]
+    },
+    "conferences": {
+      "title": "Conferências",
+      "subtitle": "Eventos em que participei.",
+      "items": ["JNation 2022", "JNation 2024"]
     },
     "associativism": {
       "title": "Associativismo",

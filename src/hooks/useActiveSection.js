@@ -11,7 +11,10 @@ export default function useActiveSection(ids, offset = 100) {
       return undefined;
     }
 
-    const handleScroll = () => {
+    let frame = 0;
+
+    const update = () => {
+      frame = 0;
       const current =
         ids
           .filter((id) => {
@@ -22,9 +25,23 @@ export default function useActiveSection(ids, offset = 100) {
       setActiveId(current);
     };
 
-    handleScroll();
+    // Throttle scroll work to one update per animation frame to avoid layout
+    // thrashing on rapid scroll events.
+    const handleScroll = () => {
+      if (frame) {
+        return;
+      }
+      frame = window.requestAnimationFrame(update);
+    };
+
+    update();
     window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (frame) {
+        window.cancelAnimationFrame(frame);
+      }
+    };
   }, [ids, offset]);
 
   return activeId;

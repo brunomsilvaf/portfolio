@@ -1,74 +1,61 @@
 # My Portfolio
 
-This project is a React Single Page Application that contains my personal portfolio, located at [brunomsilvaf.github.io](https://brunomsilvaf.github.io/portfolio).
+A React single-page application for my personal portfolio, deployed at
+[brunomsilvaf.github.io/portfolio](https://brunomsilvaf.github.io/portfolio).
 
-<br/>
+## Tech stack
 
-## Local development & Build
+- **React 19** with **React Router** (hash routing for GitHub Pages)
+- **Vite** for the dev server and production builds
+- **MUI** (Material UI) + **styled-components** for UI and theming
+- **i18next** / **react-i18next** for internationalisation (English & Portuguese)
+- Light/dark colour mode with system-preference detection
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Local development & build
 
-It uses npm to manage dependencies. Run `npm install` to set up your local environment or fetch new dependencies.
+Requires Node.js and npm. Install dependencies once with `npm install`.
 
-### `npm start`
+### `npm run dev`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Runs the app in development mode with hot module replacement.
+Open [http://localhost:3000/portfolio/](http://localhost:3000/portfolio/) to view it.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production into the `build/` folder (minified, hashed
+filenames, vendor chunks split for caching).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `npm run preview`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Serves the production build locally to verify it before deploying.
 
 ### `npm run deploy`
 
-Builds the app for production (via `npm run build`) and deploys to GitHub Pages.
-
-<br/>
+Runs `npm run build` and publishes the `build/` folder to GitHub Pages via
+`gh-pages`.
 
 ## Project structure
 
 ```
 portfolio
-│   README.md
-|   package.json
-|   ...
-|
-└───public
-│   │   favicon.ico
-│   │   index.html
-|
+│   index.html            entry HTML (SEO + Open Graph tags)
+│   vite.config.js        Vite config (base path, dev server, chunking)
+│   package.json
+│
+└───public                static assets served as-is (cv.pdf, favicon, manifest, og-image)
+│
 └───src
-│   │   index.js
-│   │   App.js
-|   |
-│   └───assets
-│   |     └───flags
-│   |     └───images
-│   |     └───logos
-|   |
-│   └───components
-|   |     └───header
-|   |     └───home
-|   |
-│   └───data (helper data objects)
-|   |
-│   └───i18n (internacionalization)
-|   |     |
-|   |     │   ...
-|   |     └───locales
-|   |
-│   └───theme (global styling)
+    │   index.jsx         app bootstrap + HashRouter
+    │   App.jsx           routes, layout, scroll handling
+    │
+    └───assets            flags, images, company logos
+    └───components
+    │   └───common        shared UI (Reveal on-scroll animation)
+    │   └───header        top navigation, language & theme switches
+    │   └───home          page sections (work, education, skills, projects, hobbies)
+    │   └───footer        contact section
+    └───data              static data (nav items, social links)
+    └───hooks             custom hooks (useActiveSection)
+    └───i18n              i18next setup + locale JSON files
+    └───theme             design tokens, MUI theme, global styles, colour mode
 ```
-
-### Styling using styled-components
-
-- This project uses styled-components for simple and reusable component customization.

@@ -6,7 +6,7 @@ function Flag({ image, alt = '', ...props }) {
 }
 
 Flag.propTypes = {
-  image: PropTypes.node.isRequired,
+  image: PropTypes.string.isRequired,
   alt: PropTypes.string
 };
 

@@ -84,9 +84,9 @@ export default function Header() {
                   key={item.locale}
                   type="button"
                   onClick={() => handleChangeLanguage(item.locale)}
-                  aria-label={item.locale}
+                  aria-label={item.label}
                 >
-                  <Flag image={item.img} />
+                  <Flag image={item.img} alt={item.label} />
                 </LanguageItem>
               ))}
             </LanguagesContainer>
@@ -132,9 +132,9 @@ export default function Header() {
                 key={item.locale}
                 type="button"
                 onClick={() => handleChangeLanguage(item.locale)}
-                aria-label={item.locale}
+                aria-label={item.label}
               >
-                <Flag image={item.img} />
+                <Flag image={item.img} alt={item.label} />
               </LanguageItem>
             ))}
           </DrawerLanguages>

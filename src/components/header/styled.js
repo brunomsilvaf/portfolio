@@ -97,7 +97,8 @@ export const LanguageItem = styled.button`
   border-radius: 4px;
   overflow: hidden;
   opacity: 0.65;
-  transition: opacity ${(props) => props.theme.transition},
+  transition:
+    opacity ${(props) => props.theme.transition},
     transform ${(props) => props.theme.transition};
 
   &:hover {

@@ -9,7 +9,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import DownloadIcon from '@mui/icons-material/Download';
 import Translator from '../../i18n/Translator';
-import SocialData from '../../data/SocialData';
+import SocialData, { cvHref } from '../../data/SocialData';
 import {
   FooterContainer,
   FooterHeading,
@@ -21,7 +21,6 @@ import {
 
 export default function Footer() {
   const { t } = useTranslation();
-  const cvHref = `${import.meta.env.BASE_URL}${SocialData.cv}`;
   const year = new Date().getFullYear();
 
   return (

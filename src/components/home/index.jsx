@@ -22,16 +22,16 @@ import {
 import Translator from '../../i18n/Translator';
 import Reveal from '../common/Reveal';
 import ProfilePhoto from '../../assets/images/profile_photo.png';
-import SocialData from '../../data/SocialData';
+import { cvHref } from '../../data/SocialData';
 import WorkExperience from './work-experience';
 import Education from './education';
 import Skills from './skills';
 import Projects from './projects';
+import Conferences from './conferences';
 import Hobbies from './hobbies';
 
 export default function MainPage() {
   const { t } = useTranslation();
-  const cvHref = `${import.meta.env.BASE_URL}${SocialData.cv}`;
 
   return (
     <PageContainer>
@@ -52,10 +52,20 @@ export default function MainPage() {
           <Translator path="hero.tagline" />
         </HeroTagline>
         <HeroActions>
-          <Button variant="contained" size="large" component={Link} to="/#projects">
+          <Button
+            variant="contained"
+            size="large"
+            component={Link}
+            to="/#projects"
+          >
             {t('actions.viewWork')}
           </Button>
-          <Button variant="outlined" size="large" component={Link} to="/#contact">
+          <Button
+            variant="outlined"
+            size="large"
+            component={Link}
+            to="/#contact"
+          >
             {t('contact.heading')}
           </Button>
           <Button
@@ -120,6 +130,18 @@ export default function MainPage() {
             <Translator path="projects.subtitle" />
           </SectionSubtitle>
           <Projects />
+        </SectionContainer>
+      </Reveal>
+
+      <Reveal>
+        <SectionContainer id="conferences">
+          <SectionTitle>
+            <Translator path="conferences.title" />
+          </SectionTitle>
+          <SectionSubtitle>
+            <Translator path="conferences.subtitle" />
+          </SectionSubtitle>
+          <Conferences />
         </SectionContainer>
       </Reveal>
 
