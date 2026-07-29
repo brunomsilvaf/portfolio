@@ -6,7 +6,15 @@
       "viewCode": "Code",
       "liveDemo": "Live demo",
       "downloadCv": "Download CV",
-      "emailMe": "Email me"
+      "emailMe": "Email me",
+      "viewWork": "View my work"
+    },
+    "hero": {
+      "tagline": "Software engineer focused on building reliable, scalable back-end systems with Java and modern web technologies."
+    },
+    "theme": {
+      "light": "Switch to light mode",
+      "dark": "Switch to dark mode"
     },
     "work-experience": {
       "title": "Work Experience",

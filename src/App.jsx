@@ -1,10 +1,8 @@
 import React, { useEffect } from 'react';
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
-import { ThemeProvider } from 'styled-components';
 import Header from './components/header';
 import Footer from './components/footer';
-import GlobalStyles from './theme/GlobalStyles';
-import theme from './theme/theme';
+import ColorModeProvider from './theme/ColorModeProvider';
 import Home from './components/home';
 
 function App() {
@@ -28,15 +26,14 @@ function App() {
   }, [pathname, hash, key]); // do this on route change
 
   return (
-    <ThemeProvider theme={theme}>
+    <ColorModeProvider>
       <Header />
-      <GlobalStyles />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />
-    </ThemeProvider>
+    </ColorModeProvider>
   );
 }
 

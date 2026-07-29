@@ -6,7 +6,15 @@
       "viewCode": "Código",
       "liveDemo": "Ver online",
       "downloadCv": "Descarregar CV",
-      "emailMe": "Enviar email"
+      "emailMe": "Enviar email",
+      "viewWork": "Ver o meu trabalho"
+    },
+    "hero": {
+      "tagline": "Engenheiro de software focado na construção de sistemas back-end fiáveis e escaláveis com Java e tecnologias web modernas."
+    },
+    "theme": {
+      "light": "Mudar para modo claro",
+      "dark": "Mudar para modo escuro"
     },
     "work-experience": {
       "title": "Experiência Profissional",
