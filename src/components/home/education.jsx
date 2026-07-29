@@ -20,7 +20,7 @@ export default function Education() {
 
   return (
     <>
-      <Timeline position="right">
+      <Timeline position="right" sx={{ px: { xs: 0, sm: 2 } }}>
         {ENTRIES.map((key, index) => {
           const base = `education.${key}`;
           const details = t(`${base}.details`, {
@@ -30,7 +30,11 @@ export default function Education() {
 
           return (
             <TimelineItem key={key}>
-              <TimelineOppositeContent variant="body2" color="text.secondary">
+              <TimelineOppositeContent
+                variant="body2"
+                color="text.secondary"
+                sx={{ display: { xs: 'none', sm: 'block' }, flex: 0.3 }}
+              >
                 {t(`${base}.date`)}
               </TimelineOppositeContent>
               <TimelineSeparator>
@@ -38,6 +42,13 @@ export default function Education() {
                 {index < ENTRIES.length - 1 && <TimelineConnector />}
               </TimelineSeparator>
               <TimelineContent sx={{ pb: '40px' }}>
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  sx={{ display: { xs: 'block', sm: 'none' }, mb: 0.5 }}
+                >
+                  {t(`${base}.date`)}
+                </Typography>
                 <Typography variant="h6" component="span">
                   {t(`${base}.title`)}
                 </Typography>

@@ -28,7 +28,7 @@ export default function WorkExperience() {
   const { t } = useTranslation();
 
   return (
-    <Timeline position="right">
+    <Timeline position="right" sx={{ px: { xs: 0, sm: 2 } }}>
       {JOBS.map((job, index) => {
         const base = `work-experience.${job.key}`;
         const skills = t(`${base}.skills`, {
@@ -38,7 +38,11 @@ export default function WorkExperience() {
 
         return (
           <TimelineItem key={job.key}>
-            <TimelineOppositeContent variant="body2" color="text.secondary">
+            <TimelineOppositeContent
+              variant="body2"
+              color="text.secondary"
+              sx={{ display: { xs: 'none', sm: 'block' }, flex: 0.3 }}
+            >
               <Translator path={`${base}.date`} />
             </TimelineOppositeContent>
             <TimelineSeparator>
@@ -54,6 +58,13 @@ export default function WorkExperience() {
                 decoding="async"
               />
               <br />
+              <Typography
+                variant="body2"
+                color="text.secondary"
+                sx={{ display: { xs: 'block', sm: 'none' }, mt: 0.5 }}
+              >
+                <Translator path={`${base}.date`} />
+              </Typography>
               <Typography variant="h6" component="span">
                 <Translator path={`${base}.role`} />
               </Typography>

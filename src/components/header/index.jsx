@@ -27,11 +27,15 @@ import NavMenuItems from '../../data/NavMenuData';
 import Translator from '../../i18n/Translator';
 import { languages } from '../../i18n';
 import { useColorMode } from '../../theme/ColorModeProvider';
+import useActiveSection from '../../hooks/useActiveSection';
+
+const SECTION_IDS = NavMenuItems.map((menu) => menu.url.split('#').pop());
 
 export default function Header() {
   const { i18n, t } = useTranslation();
   const { mode, toggle } = useColorMode();
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const activeSection = useActiveSection(SECTION_IDS);
 
   function handleChangeLanguage(language) {
     i18n.changeLanguage(language);
@@ -45,7 +49,12 @@ export default function Header() {
         <NavigationItems>
           {NavMenuItems.map((menu) => (
             <li key={menu.id}>
-              <Link to={menu.url}>
+              <Link
+                to={menu.url}
+                className={
+                  activeSection === menu.url.split('#').pop() ? 'active' : ''
+                }
+              >
                 <Translator path={menu.title} />
               </Link>
             </li>

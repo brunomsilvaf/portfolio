@@ -17,9 +17,15 @@ export const HeroSection = styled.section`
 export const HeroAvatar = styled.img`
   width: 160px;
   height: 160px;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center bottom;
   border-radius: 50%;
   border: 4px solid ${(props) => props.theme.color_surface};
+  background: linear-gradient(
+    160deg,
+    ${(props) => props.theme.color_surface_alt},
+    ${(props) => props.theme.color_surface}
+  );
   box-shadow: ${(props) => props.theme.shadow_card};
 `;
 
@@ -41,6 +47,9 @@ export const WorkContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   padding-left: 20px;
+  @media only screen and (max-width: 600px) {
+    padding-left: 0;
+  }
 `;
 
 export const LogoContainer = styled.img``;

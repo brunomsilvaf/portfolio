@@ -47,6 +47,10 @@ export const NavigationItems = styled.ul`
     &:hover {
       color: ${(props) => props.theme.color_accent};
     }
+    &.active {
+      color: ${(props) => props.theme.color_accent};
+      font-weight: 700;
+    }
   }
 
   @media only screen and (max-width: ${MOBILE}) {

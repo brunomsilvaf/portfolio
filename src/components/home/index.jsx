@@ -21,7 +21,7 @@ import {
 } from './styled';
 import Translator from '../../i18n/Translator';
 import Reveal from '../common/Reveal';
-import ProfilePhoto from '../../assets/images/profile_photo.jpg';
+import ProfilePhoto from '../../assets/images/profile_photo.png';
 import SocialData from '../../data/SocialData';
 import WorkExperience from './work-experience';
 import Education from './education';

@@ -12,6 +12,23 @@ export default defineConfig({
   },
   build: {
     // Keep the output folder as `build` so the gh-pages deploy script works as-is
-    outDir: 'build'
+    outDir: 'build',
+    rollupOptions: {
+      output: {
+        // Split large vendor libraries into separate chunks for better caching.
+        manualChunks(id) {
+          if (!id.includes('node_modules')) {
+            return undefined;
+          }
+          if (id.includes('@mui') || id.includes('@emotion')) {
+            return 'mui-vendor';
+          }
+          if (id.includes('react')) {
+            return 'react-vendor';
+          }
+          return 'vendor';
+        }
+      }
+    }
   }
 });
