@@ -7,6 +7,9 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
+import Stack from '@mui/material/Stack';
+import Chip from '@mui/material/Chip';
+import { useTranslation } from 'react-i18next';
 import Translator from '../../i18n/Translator';
 import CgiLogo from '../../assets/logos/cgi.png';
 import DiconiumLogo from '../../assets/logos/diconium.png';
@@ -14,100 +17,72 @@ import RiskcoLogo from '../../assets/logos/riskco.png';
 import TalkdeskLogo from '../../assets/logos/talkdesk.png';
 import { LogoContainer } from './styled';
 
+const JOBS = [
+  { key: 'diconium', logo: DiconiumLogo, height: '22px' },
+  { key: 'talkdesk', logo: TalkdeskLogo, height: '22px' },
+  { key: 'cgi', logo: CgiLogo, height: '20px' },
+  { key: 'riskco', logo: RiskcoLogo, height: '32px' }
+];
+
 export default function WorkExperience() {
+  const { t } = useTranslation();
+
   return (
     <Timeline position="right">
-      <TimelineItem>
-        <TimelineOppositeContent variant="body2" color="text.secondary">
-          <Translator path="work-experience.diconium.date" />
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent sx={{ pb: '40px' }}>
-          <LogoContainer src={DiconiumLogo} alt="diconium-logo" height="22px" />
-          <br />
-          <Typography variant="h6" component="span">
-            <Translator path="work-experience.diconium.role" />
-          </Typography>
-          <Typography>
-            <Translator path="work-experience.diconium.summary" />
-          </Typography>
-          <Typography>
-            <Translator path="work-experience.diconium.details" />
-          </Typography>
-        </TimelineContent>
-      </TimelineItem>
+      {JOBS.map((job, index) => {
+        const base = `work-experience.${job.key}`;
+        const skills = t(`${base}.skills`, {
+          returnObjects: true,
+          defaultValue: []
+        });
 
-      <TimelineItem>
-        <TimelineOppositeContent variant="body2" color="text.secondary">
-          <Translator path="work-experience.talkdesk.date" />
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent sx={{ pb: '40px' }}>
-          <LogoContainer src={TalkdeskLogo} alt="talkdesk-logo" height="22px" />
-          <br />
-          <Typography variant="h6" component="span">
-            <Translator path="work-experience.talkdesk.role" />
-          </Typography>
-          <Typography>
-            <Translator path="work-experience.talkdesk.summary" />
-          </Typography>
-          <Typography>
-            <Translator path="work-experience.talkdesk.details" />
-          </Typography>
-        </TimelineContent>
-      </TimelineItem>
-
-      <TimelineItem>
-        <TimelineOppositeContent variant="body2" color="text.secondary">
-          <Translator path="work-experience.cgi.date" />
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent sx={{ pb: '40px' }}>
-          <LogoContainer src={CgiLogo} alt="cgi-logo" height="20px" />
-          <br />
-          <Typography variant="h6" component="span">
-            <Translator path="work-experience.cgi.role" />
-          </Typography>
-          <Typography>
-            <Translator path="work-experience.cgi.summary" />
-          </Typography>
-          <Typography>
-            <Translator path="work-experience.cgi.details" />
-          </Typography>
-        </TimelineContent>
-      </TimelineItem>
-
-      <TimelineItem>
-        <TimelineOppositeContent variant="body2" color="text.secondary">
-          <Translator path="work-experience.riskco.date" />
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>
-          <LogoContainer src={RiskcoLogo} alt="riskco-logo" height="32px" />
-          <br />
-          <Typography variant="h6" component="span">
-            <Translator path="work-experience.riskco.role" />
-          </Typography>
-          <Typography>
-            <Translator path="work-experience.riskco.summary" />
-          </Typography>
-          <Typography>
-            <Translator path="work-experience.riskco.details" />
-          </Typography>
-        </TimelineContent>
-      </TimelineItem>
+        return (
+          <TimelineItem key={job.key}>
+            <TimelineOppositeContent variant="body2" color="text.secondary">
+              <Translator path={`${base}.date`} />
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineDot />
+              {index < JOBS.length - 1 && <TimelineConnector />}
+            </TimelineSeparator>
+            <TimelineContent sx={{ pb: '40px' }}>
+              <LogoContainer
+                src={job.logo}
+                alt={`${job.key}-logo`}
+                height={job.height}
+              />
+              <br />
+              <Typography variant="h6" component="span">
+                <Translator path={`${base}.role`} />
+              </Typography>
+              <Typography>
+                <Translator path={`${base}.summary`} />
+              </Typography>
+              <Typography>
+                <Translator path={`${base}.details`} />
+              </Typography>
+              {Array.isArray(skills) && skills.length > 0 && (
+                <Stack
+                  direction="row"
+                  spacing={1}
+                  useFlexGap
+                  sx={{ flexWrap: 'wrap', mt: 1.5 }}
+                >
+                  {skills.map((skill) => (
+                    <Chip
+                      key={skill}
+                      label={skill}
+                      size="small"
+                      variant="outlined"
+                    />
+                  ))}
+                </Stack>
+              )}
+            </TimelineContent>
+          </TimelineItem>
+        );
+      })}
     </Timeline>
   );
 }
+

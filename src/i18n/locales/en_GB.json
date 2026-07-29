@@ -2,6 +2,12 @@
   "translations": {
     "role": "Software Engineer",
     "profile": "By pursuing a career as a software engineer, I had contact with different IT companies, meeting people from all over the world.<br/><br/>Having worked in a fast-moving environment on a few projects around the Dutch pension administration system, I was able to develop crucial technical, flexibility and adaptability skills. Looking for different challenges, I joined a cloud contact center company, working with hundreds of top-notch engineers to deliver the best innovative solutions to the market.<br/><br/>Over the past 5 years, I have worked with many different technologies, with particular focus on the Java language and its best frameworks and practices. As a team player, I believe teamwork and positivity always bring the best results.",
+    "actions": {
+      "viewCode": "Code",
+      "liveDemo": "Live demo",
+      "downloadCv": "Download CV",
+      "emailMe": "Email me"
+    },
     "work-experience": {
       "title": "Work Experience",
       "conferences": ["JNation 2022", "JNation 2024"],
@@ -9,8 +15,8 @@
         "role": "Software Engineer",
         "title": "diconium",
         "date": "Nov 2023 - Present",
-        "summary": "",
-        "details": "",
+        "summary": "Digital products and platforms for enterprise clients.",
+        "details": "Design and development of identity and access management services using Java, Spring and Keycloak; <br/><br/> Integration of secure authentication flows across multiple client applications.",
         "skills": ["Java", "Spring", "Keycloak"]
       },
       "talkdesk": {
@@ -33,7 +39,8 @@
         "title": "CGI",
         "date": "Jan 2021 - Jun 2021",
         "summary": "Acquisition of RiskCo by a consortium which includes CGI.<br/><br/>Same responsibilities as in the previous role.",
-        "details": ""
+        "details": "",
+        "skills": ["Java", "Spring Boot", "Groovy", "Docker"]
       },
       "riskco": {
         "role": "Software Developer",
@@ -52,21 +59,21 @@
         ]
       }
     },
-    "soft-skills": {},
     "education": {
       "title": "Education",
+      "languagesTitle": "Languages",
       "languages": {
         "pt": {
           "title": "Portuguese",
-          "level": "native"
+          "level": "Native"
         },
         "en": {
           "title": "English",
-          "level": "fluent"
+          "level": "Fluent"
         },
         "de": {
           "title": "German",
-          "level": "beginner"
+          "level": "Beginner"
         }
       },
       "masters": {
@@ -96,16 +103,89 @@
         ]
       }
     },
+    "skills": {
+      "title": "Skills",
+      "subtitle": "Technologies and tools I work with.",
+      "categories": [
+        {
+          "name": "Languages",
+          "items": ["Java", "JavaScript", "TypeScript", "Ruby", "C#", "Groovy", "SQL"]
+        },
+        {
+          "name": "Frameworks & Libraries",
+          "items": ["Spring Boot", "Quarkus", "React", "GraphQL", "Node.js"]
+        },
+        {
+          "name": "Tools & Platforms",
+          "items": ["Docker", "Git", "GitHub", "Keycloak", "Maven"]
+        },
+        {
+          "name": "Cloud & DevOps",
+          "items": ["Azure", "AWS", "CI/CD", "Kubernetes"]
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projects",
+      "subtitle": "A selection of things I have built.",
+      "items": [
+        {
+          "title": "Personal Portfolio",
+          "description": "This very website — a responsive single-page portfolio built with React and Vite, featuring internationalization and a component-driven design.",
+          "tags": ["React", "Vite", "styled-components", "i18next"],
+          "repo": "https://github.com/brunomsilvaf/portfolio",
+          "demo": "https://brunomsilvaf.github.io/portfolio/"
+        },
+        {
+          "title": "Task Manager API",
+          "description": "A placeholder REST API for managing tasks and projects, with authentication, role-based access and a documented OpenAPI specification.",
+          "tags": ["Java", "Spring Boot", "PostgreSQL", "Docker"],
+          "repo": "https://github.com/brunomsilvaf",
+          "demo": ""
+        },
+        {
+          "title": "Real-time Chat App",
+          "description": "A placeholder real-time messaging application with rooms, presence indicators and message history, powered by WebSockets.",
+          "tags": ["React", "Node.js", "WebSocket", "MongoDB"],
+          "repo": "https://github.com/brunomsilvaf",
+          "demo": ""
+        }
+      ]
+    },
     "associativism": {
       "title": "Associativism",
       "description": "Throughout my academic path, I have participated in many editions of engineering and robotics competitions, both as a participant and as collaborator: Bot Olympics and EBEC Coimbra. I have also been a board member of the IEEE UC Student Branch, organizing many workshops and the 2016 Leadership Camp.<br/><br/>Besides engineering associations and competitions, I have joined  a university choir (CMUC) where I was the vice president for a year, growing many associative and leadership competencies.<br/><br/> Ocasionally, I participate in volunteering activities, such as volunteering at a local cat shelter and in the restoration of the native forest of Serra do Bussaco. "
     },
     "hobbies": {
       "title": "Hobbies",
-      "choir": "",
-      "padel": "",
-      "boardgames": "",
-      "editing": ""
+      "items": [
+        {
+          "icon": "choir",
+          "name": "Choir Singing",
+          "description": "Singing in a university choir and exploring different vocal repertoires."
+        },
+        {
+          "icon": "padel",
+          "name": "Padel",
+          "description": "Playing padel regularly to stay active and enjoy some friendly competition."
+        },
+        {
+          "icon": "boardgames",
+          "name": "Board Games",
+          "description": "Gathering friends for strategy and cooperative board game nights."
+        },
+        {
+          "icon": "editing",
+          "name": "Video Editing",
+          "description": "Editing videos of trips and events as a creative side project."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "heading": "Get in touch",
+      "description": "I am always happy to connect — whether it is about a project, an opportunity, or just to say hello.",
+      "rights": "All rights reserved."
     }
   }
 }

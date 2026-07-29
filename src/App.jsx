@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import Header from './components/header';
+import Footer from './components/footer';
 import GlobalStyles from './theme/GlobalStyles';
 import theme from './theme/theme';
 import Home from './components/home';
@@ -34,6 +35,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
+      <Footer />
     </ThemeProvider>
   );
 }

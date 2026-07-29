@@ -1,24 +1,30 @@
 {
   "translations": {
     "role": "Engenheiro de Software",
-    "profile": "By pursuing a career as a software engineer, I had contact with different IT companies, meeting people from all over the world.<br/><br/>Having worked in a fast-moving environment on a few projects around the Dutch pension administration system, I was able to develop crucial technical, flexibility and adaptability skills. Looking for different challenges, I joined a cloud contact center company, working with hundreds of top-notch engineers to deliver the best innovative solutions to the market.<br/><br/>Over the past 5 years, I have worked with many different technologies, with particular focus on the Java language and its best frameworks and practices. As a team player, I believe teamwork and positivity always bring the best results.",
+    "profile": "Ao seguir uma carreira como engenheiro de software, tive contacto com diferentes empresas de TI, conhecendo pessoas de todo o mundo.<br/><br/>Tendo trabalhado num ambiente dinâmico em vários projetos relacionados com o sistema holandês de administração de pensões, consegui desenvolver competências técnicas, de flexibilidade e de adaptabilidade essenciais. Em busca de novos desafios, juntei-me a uma empresa de contact center na cloud, trabalhando com centenas de engenheiros de topo para entregar as melhores soluções inovadoras ao mercado.<br/><br/>Ao longo dos últimos 5 anos, trabalhei com muitas tecnologias diferentes, com particular foco na linguagem Java e nas suas melhores frameworks e práticas. Como alguém que valoriza o trabalho em equipa, acredito que o espírito de equipa e a positividade trazem sempre os melhores resultados.",
+    "actions": {
+      "viewCode": "Código",
+      "liveDemo": "Ver online",
+      "downloadCv": "Descarregar CV",
+      "emailMe": "Enviar email"
+    },
     "work-experience": {
-      "title": "Work Experience",
+      "title": "Experiência Profissional",
       "conferences": ["JNation 2022", "JNation 2024"],
       "diconium": {
-        "role": "Software Engineer",
+        "role": "Engenheiro de Software",
         "title": "diconium",
-        "date": "Nov 2023 - Present",
-        "summary": "",
-        "details": "",
+        "date": "Nov 2023 - Presente",
+        "summary": "Produtos e plataformas digitais para clientes empresariais.",
+        "details": "Conceção e desenvolvimento de serviços de gestão de identidade e acessos com Java, Spring e Keycloak; <br/><br/> Integração de fluxos de autenticação seguros em várias aplicações cliente.",
         "skills": ["Java", "Spring", "Keycloak"]
       },
       "talkdesk": {
-        "role": "Software Engineer",
+        "role": "Engenheiro de Software",
         "title": "Talkdesk",
-        "date": "Jul 2021 - May 2023",
-        "summary": "Workforce Engagement and Management solutions for contact  centers.",
-        "details": "Development of core services for an event-driven microservice architecture using Java 17 and Quarkus; <br/><br/> Development of a multi-storage solution in Java and Ruby and integration with Azure Storage.",
+        "date": "Jul 2021 - Mai 2023",
+        "summary": "Soluções de Workforce Engagement and Management para contact centers.",
+        "details": "Desenvolvimento de serviços core para uma arquitetura de microsserviços orientada a eventos com Java 17 e Quarkus; <br/><br/> Desenvolvimento de uma solução de armazenamento multi-storage em Java e Ruby e integração com Azure Storage.",
         "skills": [
           "Java",
           "Quarkus",
@@ -29,18 +35,19 @@
         ]
       },
       "cgi": {
-        "role": "Software Developer",
+        "role": "Programador de Software",
         "title": "CGI",
         "date": "Jan 2021 - Jun 2021",
-        "summary": "Acquisition of RiskCo by a consortium which includes CGI.<br/><br/>Same responsibilities as in the previous role.",
-        "details": ""
+        "summary": "Aquisição da RiskCo por um consórcio que inclui a CGI.<br/><br/>Mesmas responsabilidades do cargo anterior.",
+        "details": "",
+        "skills": ["Java", "Spring Boot", "Groovy", "Docker"]
       },
       "riskco": {
-        "role": "Software Developer",
+        "role": "Programador de Software",
         "title": "InAdmin RiskCo",
-        "date": "Feb 2018 - Dec 2020",
-        "summary": "Administrative solutions for Dutch pension institutions. Fast-moving environment requiring a great sense of resilience and adaptability to multiple technologies and projects.",
-        "details": "Development of client-server components for a PaaS system, mainly based on Java, Spring Boot and ReactJS with a GraphQL API, to visualize and treat of big sets of pension data; <br/><br/> Development and maintenance of Groovy libraries; <br/><br/>Customer support to a client-server Windows based application (C#) used in the calculation of theoretical prices for bank products; <br/><br/>Customer support for mobile (Android and iOS) applications and maintenance of existing Excel Macros; <br/><br/>Implementation of BPMN models to be integrated in the PaaS system",
+        "date": "Fev 2018 - Dez 2020",
+        "summary": "Soluções administrativas para instituições de pensões holandesas. Ambiente dinâmico que exige grande sentido de resiliência e adaptabilidade a múltiplas tecnologias e projetos.",
+        "details": "Desenvolvimento de componentes cliente-servidor para um sistema PaaS, essencialmente baseado em Java, Spring Boot e ReactJS com uma API GraphQL, para visualizar e tratar grandes conjuntos de dados de pensões; <br/><br/> Desenvolvimento e manutenção de bibliotecas em Groovy; <br/><br/>Apoio ao cliente numa aplicação cliente-servidor para Windows (C#) usada no cálculo de preços teóricos de produtos bancários; <br/><br/>Apoio ao cliente em aplicações móveis (Android e iOS) e manutenção de macros de Excel existentes; <br/><br/>Implementação de modelos BPMN para integração no sistema PaaS",
         "skills": [
           "Java",
           "Spring Boot",
@@ -52,60 +59,133 @@
         ]
       }
     },
-    "soft-skills": {},
     "education": {
-      "title": "Education",
+      "title": "Educação",
+      "languagesTitle": "Idiomas",
       "languages": {
         "pt": {
-          "title": "Portuguese",
-          "level": "native"
+          "title": "Português",
+          "level": "Nativo"
         },
         "en": {
-          "title": "English",
-          "level": "fluent"
+          "title": "Inglês",
+          "level": "Fluente"
         },
         "de": {
-          "title": "German",
-          "level": "beginner"
+          "title": "Alemão",
+          "level": "Iniciante"
         }
       },
       "masters": {
-        "title": "Masters in Electrical and Computer Engineering",
-        "local": "FCTUC - University of Coimbra",
-        "date": "Sep 2012 - Sep 2017",
+        "title": "Mestrado em Engenharia Eletrotécnica e de Computadores",
+        "local": "FCTUC - Universidade de Coimbra",
+        "date": "Set 2012 - Set 2017",
         "details": [
-          "Dissertation: Fusion of inertial data in industrial AGVs",
-          "Specialization in Automation",
-          "3% best students award 2012/2013"
+          "Dissertação: Fusão de dados inerciais em AGVs industriais",
+          "Especialização em Automação",
+          "Prémio 3% melhores alunos 2012/2013"
         ]
       },
       "curricular_internship": {
-        "title": "Curricular Internship",
+        "title": "Estágio Curricular",
         "local": "Active Space Technologies",
-        "date": "March 2017 - August 2017",
+        "date": "Março 2017 - Agosto 2017",
         "details": [
-          "Firmware development and hardware design for an inertial system to assist in the navigation of industrial AGVs"
+          "Desenvolvimento de firmware e conceção de hardware para um sistema inercial de apoio à navegação de AGVs industriais"
         ]
       },
       "summer_internship": {
-        "title": "Summer Internship",
+        "title": "Estágio de Verão",
         "local": "Active Space Technologies",
-        "date": "July 2016 - Sep 2016",
+        "date": "Julho 2016 - Set 2016",
         "details": [
-          "Software development for a Pick & Place machine using QT Creator"
+          "Desenvolvimento de software para uma máquina Pick & Place com QT Creator"
         ]
       }
     },
+    "skills": {
+      "title": "Competências",
+      "subtitle": "Tecnologias e ferramentas com que trabalho.",
+      "categories": [
+        {
+          "name": "Linguagens",
+          "items": ["Java", "JavaScript", "TypeScript", "Ruby", "C#", "Groovy", "SQL"]
+        },
+        {
+          "name": "Frameworks e Bibliotecas",
+          "items": ["Spring Boot", "Quarkus", "React", "GraphQL", "Node.js"]
+        },
+        {
+          "name": "Ferramentas e Plataformas",
+          "items": ["Docker", "Git", "GitHub", "Keycloak", "Maven"]
+        },
+        {
+          "name": "Cloud e DevOps",
+          "items": ["Azure", "AWS", "CI/CD", "Kubernetes"]
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projetos",
+      "subtitle": "Uma seleção de coisas que construí.",
+      "items": [
+        {
+          "title": "Portefólio Pessoal",
+          "description": "Este próprio website — um portefólio de página única e responsivo, construído com React e Vite, com internacionalização e um design orientado a componentes.",
+          "tags": ["React", "Vite", "styled-components", "i18next"],
+          "repo": "https://github.com/brunomsilvaf/portfolio",
+          "demo": "https://brunomsilvaf.github.io/portfolio/"
+        },
+        {
+          "title": "API de Gestão de Tarefas",
+          "description": "Uma API REST de exemplo para gerir tarefas e projetos, com autenticação, controlo de acessos por perfis e uma especificação OpenAPI documentada.",
+          "tags": ["Java", "Spring Boot", "PostgreSQL", "Docker"],
+          "repo": "https://github.com/brunomsilvaf",
+          "demo": ""
+        },
+        {
+          "title": "Aplicação de Chat em Tempo Real",
+          "description": "Uma aplicação de mensagens em tempo real de exemplo, com salas, indicadores de presença e histórico de mensagens, suportada por WebSockets.",
+          "tags": ["React", "Node.js", "WebSocket", "MongoDB"],
+          "repo": "https://github.com/brunomsilvaf",
+          "demo": ""
+        }
+      ]
+    },
     "associativism": {
-      "title": "Associativism",
-      "description": "Throughout my academic path, I have participated in many editions of engineering and robotics competitions, both as a participant and as collaborator: Bot Olympics and EBEC Coimbra. I have also been a board member of the IEEE UC Student Branch, organizing many workshops and the 2016 Leadership Camp.<br/><br/>Besides engineering associations and competitions, I have joined  a university choir (CMUC) where I was the vice president for a year, growing many associative and leadership competencies.<br/><br/> Ocasionally, I participate in volunteering activities, such as volunteering at a local cat shelter and in the restoration of the native forest of Serra do Bussaco. "
+      "title": "Associativismo",
+      "description": "Ao longo do meu percurso académico, participei em várias edições de competições de engenharia e robótica, tanto como participante como colaborador: Bot Olympics e EBEC Coimbra. Fui também membro da direção do Ramo de Estudantes IEEE UC, organizando vários workshops e o Leadership Camp de 2016.<br/><br/>Para além de associações e competições de engenharia, integrei um coro universitário (CMUC), onde fui vice-presidente durante um ano, desenvolvendo muitas competências associativas e de liderança.<br/><br/> Ocasionalmente, participo em atividades de voluntariado, como no apoio a um abrigo local de gatos e na recuperação da floresta nativa da Serra do Buçaco."
     },
     "hobbies": {
-      "title": "Hobbies",
-      "choir": "",
-      "padel": "",
-      "boardgames": "",
-      "editing": ""
+      "title": "Passatempos",
+      "items": [
+        {
+          "icon": "choir",
+          "name": "Canto Coral",
+          "description": "Cantar num coro universitário e explorar diferentes repertórios vocais."
+        },
+        {
+          "icon": "padel",
+          "name": "Padel",
+          "description": "Jogar padel regularmente para me manter ativo e desfrutar de alguma competição amigável."
+        },
+        {
+          "icon": "boardgames",
+          "name": "Jogos de Tabuleiro",
+          "description": "Juntar amigos para noites de jogos de tabuleiro de estratégia e cooperativos."
+        },
+        {
+          "icon": "editing",
+          "name": "Edição de Vídeo",
+          "description": "Editar vídeos de viagens e eventos como projeto criativo paralelo."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contacto",
+      "heading": "Vamos falar",
+      "description": "Estou sempre disponível para conversar — seja sobre um projeto, uma oportunidade, ou apenas para dizer olá.",
+      "rights": "Todos os direitos reservados."
     }
   }
 }

@@ -11,12 +11,27 @@ export default [
   },
   {
     id: 3,
+    title: 'skills.title',
+    url: '/#skills'
+  },
+  {
+    id: 4,
+    title: 'projects.title',
+    url: '/#projects'
+  },
+  {
+    id: 5,
     title: 'associativism.title',
     url: '/#associativism'
   },
   {
-    id: 4,
+    id: 6,
     title: 'hobbies.title',
     url: '/#hobbies'
+  },
+  {
+    id: 7,
+    title: 'contact.title',
+    url: '/#contact'
   }
 ];

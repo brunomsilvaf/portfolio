@@ -7,10 +7,19 @@ import {
   SectionTitle,
   Text
 } from '../../theme/GlobalStyles';
-import { IntroContainer, IntroTitlesContainer, WorkContainer } from './styled';
+import {
+  IntroContainer,
+  IntroTitlesContainer,
+  WorkContainer,
+  SectionSubtitle
+} from './styled';
 import Translator from '../../i18n/Translator';
 import ProfilePhoto from '../../assets/images/profile_photo.jpg';
 import WorkExperience from './work-experience';
+import Education from './education';
+import Skills from './skills';
+import Projects from './projects';
+import Hobbies from './hobbies';
 
 export default function MainPage() {
   return (
@@ -45,6 +54,27 @@ export default function MainPage() {
         <SectionTitle>
           <Translator path="education.title" />
         </SectionTitle>
+        <Education />
+      </SectionContainer>
+
+      <SectionContainer id="skills">
+        <SectionTitle>
+          <Translator path="skills.title" />
+        </SectionTitle>
+        <SectionSubtitle>
+          <Translator path="skills.subtitle" />
+        </SectionSubtitle>
+        <Skills />
+      </SectionContainer>
+
+      <SectionContainer id="projects">
+        <SectionTitle>
+          <Translator path="projects.title" />
+        </SectionTitle>
+        <SectionSubtitle>
+          <Translator path="projects.subtitle" />
+        </SectionSubtitle>
+        <Projects />
       </SectionContainer>
 
       <SectionContainer id="associativism">
@@ -60,6 +90,7 @@ export default function MainPage() {
         <SectionTitle>
           <Translator path="hobbies.title" />
         </SectionTitle>
+        <Hobbies />
       </SectionContainer>
     </PageContainer>
   );
