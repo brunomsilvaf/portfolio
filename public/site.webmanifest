@@ -1,0 +1,17 @@
+{
+  "name": "Bruno Fernandes | Software Engineer",
+  "short_name": "Bruno Fernandes",
+  "description": "Portfolio of Bruno Fernandes, software engineer based in Coimbra, Portugal.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#F7F8FA",
+  "theme_color": "#2563EB",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

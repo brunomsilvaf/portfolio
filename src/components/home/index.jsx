@@ -36,7 +36,14 @@ export default function MainPage() {
   return (
     <PageContainer>
       <HeroSection id="home">
-        <HeroAvatar src={ProfilePhoto} alt="Bruno Fernandes" />
+        <HeroAvatar
+          src={ProfilePhoto}
+          alt="Bruno Fernandes"
+          width="160"
+          height="160"
+          decoding="async"
+          fetchPriority="high"
+        />
         <PageTitle>Bruno Fernandes</PageTitle>
         <PageSubTitle>
           <Translator path="role" />

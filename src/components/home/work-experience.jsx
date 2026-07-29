@@ -50,6 +50,8 @@ export default function WorkExperience() {
                 src={job.logo}
                 alt={`${job.key}-logo`}
                 height={job.height}
+                loading="lazy"
+                decoding="async"
               />
               <br />
               <Typography variant="h6" component="span">

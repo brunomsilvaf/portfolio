@@ -1,18 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
+import Drawer from '@mui/material/Drawer';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 
 import {
   HeaderContainer,
   NavigationContainer,
+  Brand,
   NavigationItems,
   RightControls,
+  DesktopOnly,
+  MobileOnly,
   LanguagesContainer,
-  LanguageItem
+  LanguageItem,
+  DrawerContent,
+  DrawerLanguages
 } from './styled';
 import Flag from './Flag';
 import NavMenuItems from '../../data/NavMenuData';
@@ -23,6 +31,7 @@ import { useColorMode } from '../../theme/ColorModeProvider';
 export default function Header() {
   const { i18n, t } = useTranslation();
   const { mode, toggle } = useColorMode();
+  const [drawerOpen, setDrawerOpen] = useState(false);
 
   function handleChangeLanguage(language) {
     i18n.changeLanguage(language);
@@ -31,6 +40,8 @@ export default function Header() {
   return (
     <HeaderContainer>
       <NavigationContainer>
+        <Brand to="/#home">Bruno Fernandes</Brand>
+
         <NavigationItems>
           {NavMenuItems.map((menu) => (
             <li key={menu.id}>
@@ -40,6 +51,7 @@ export default function Header() {
             </li>
           ))}
         </NavigationItems>
+
         <RightControls>
           <Tooltip title={mode === 'dark' ? t('theme.light') : t('theme.dark')}>
             <IconButton
@@ -55,7 +67,57 @@ export default function Header() {
               )}
             </IconButton>
           </Tooltip>
-          <LanguagesContainer>
+
+          <DesktopOnly>
+            <LanguagesContainer>
+              {languages.map((item) => (
+                <LanguageItem
+                  key={item.locale}
+                  type="button"
+                  onClick={() => handleChangeLanguage(item.locale)}
+                  aria-label={item.locale}
+                >
+                  <Flag image={item.img} />
+                </LanguageItem>
+              ))}
+            </LanguagesContainer>
+          </DesktopOnly>
+
+          <MobileOnly>
+            <IconButton
+              color="inherit"
+              onClick={() => setDrawerOpen(true)}
+              aria-label="Open menu"
+            >
+              <MenuIcon />
+            </IconButton>
+          </MobileOnly>
+        </RightControls>
+      </NavigationContainer>
+
+      <Drawer
+        anchor="right"
+        open={drawerOpen}
+        onClose={() => setDrawerOpen(false)}
+      >
+        <DrawerContent>
+          <IconButton
+            onClick={() => setDrawerOpen(false)}
+            aria-label="Close menu"
+            sx={{ alignSelf: 'flex-end' }}
+          >
+            <CloseIcon />
+          </IconButton>
+          {NavMenuItems.map((menu) => (
+            <Link
+              key={menu.id}
+              to={menu.url}
+              onClick={() => setDrawerOpen(false)}
+            >
+              <Translator path={menu.title} />
+            </Link>
+          ))}
+          <DrawerLanguages>
             {languages.map((item) => (
               <LanguageItem
                 key={item.locale}
@@ -66,9 +128,9 @@ export default function Header() {
                 <Flag image={item.img} />
               </LanguageItem>
             ))}
-          </LanguagesContainer>
-        </RightControls>
-      </NavigationContainer>
+          </DrawerLanguages>
+        </DrawerContent>
+      </Drawer>
     </HeaderContainer>
   );
 }
