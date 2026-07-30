@@ -1,7 +1,7 @@
 {
   "translations": {
     "role": "Engenheiro de Software",
-    "profile": "Como engenheiro de software, trabalhei com várias empresas de TI, colaborando com pessoas de todo o mundo.<br/><br/>Comecei num ambiente dinâmico, a construir componentes de um sistema holandês de administração de pensões, onde desenvolvi sólidas competências técnicas, de flexibilidade e de adaptabilidade. Em busca de novos desafios, juntei-me a uma empresa de software para contact centers na cloud, trabalhando ao lado de centenas de engenheiros de topo para entregar soluções inovadoras em grande escala. Mais recentemente, tenho concebido serviços de gestão de identidade e acessos e plataformas digitais para clientes empresariais, com foco em sistemas back-end seguros e fiáveis.<br/><br/>Ao longo dos últimos 8 anos, trabalhei com muitas tecnologias, com particular foco em Java e no seu ecossistema de frameworks e boas práticas. Como alguém que valoriza o trabalho em equipa, acredito que a colaboração e uma atitude positiva trazem sempre os melhores resultados.",
+    "profile": "Como engenheiro de software, trabalhei com várias empresas de TI, colaborando com pessoas de todo o mundo.<br/><br/>Comecei num ambiente dinâmico, a construir componentes de um sistema holandês de administração de pensões, onde desenvolvi sólidas competências técnicas, de flexibilidade e de adaptabilidade. Em busca de novos desafios, juntei-me a uma empresa de software para contact centers na cloud, trabalhando ao lado de centenas de engenheiros de topo para entregar soluções inovadoras em grande escala. Mais recentemente, tenho concebido serviços de gestão de identidade e acessos e plataformas digitais para clientes empresariais do setor automóvel, com foco em sistemas back-end seguros e fiáveis.<br/><br/>Ao longo dos últimos 8 anos, trabalhei com muitas tecnologias, com particular foco em Java e no seu ecossistema de frameworks e boas práticas. Como alguém que valoriza o trabalho em equipa, acredito que a colaboração e uma atitude positiva trazem sempre os melhores resultados.",
     "actions": {
       "viewCode": "Código",
       "liveDemo": "Ver online",
@@ -22,7 +22,7 @@
         "role": "Engenheiro de Software",
         "title": "diconium",
         "date": "Nov 2023 - Presente",
-        "summary": "Produtos e plataformas digitais para clientes empresariais.",
+        "summary": "Produtos e plataformas digitais para clientes empresariais do setor automóvel.",
         "details": "Conceção e desenvolvimento de serviços de gestão de identidade e acessos com Java, Spring e Keycloak; <br/><br/> Integração de fluxos de autenticação seguros em várias aplicações cliente.",
         "skills": ["Java", "Spring Boot", "Keycloak"],
         "projects": [

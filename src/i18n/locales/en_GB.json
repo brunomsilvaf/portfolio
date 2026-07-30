@@ -1,7 +1,7 @@
 {
   "translations": {
     "role": "Software Engineer",
-    "profile": "As a software engineer, I have worked with IT companies across Europe, collaborating with people from all over the world.<br/><br/>I started out in a fast-moving environment building components of a Dutch pension administration system, where I developed strong technical, flexibility and adaptability skills. Looking for new challenges, I joined a cloud contact centre software company, working alongside hundreds of talented engineers to deliver innovative solutions at scale. More recently, I have been designing identity and access management services and digital platforms for enterprise clients, with a focus on secure and reliable back-end systems.<br/><br/>Over the past 8 years I have worked across many technologies, with a particular focus on Java and its ecosystem of frameworks and best practices. As a team player, I believe that collaboration and a positive attitude always bring the best results.",
+    "profile": "As a software engineer, I have worked with IT companies across Europe, collaborating with people from all over the world.<br/><br/>I started out in a fast-moving environment building components of a Dutch pension administration system, where I developed strong technical, flexibility and adaptability skills. Looking for new challenges, I joined a cloud contact centre software company, working alongside hundreds of talented engineers to deliver innovative solutions at scale. More recently, I have been designing identity and access management services and digital platforms for enterprise clients in the automotive industry, with a focus on secure and reliable back-end systems.<br/><br/>Over the past 8 years I have worked across many technologies, with a particular focus on Java and its ecosystem of frameworks and best practices. As a team player, I believe that collaboration and a positive attitude always bring the best results.",
     "actions": {
       "viewCode": "Code",
       "liveDemo": "Live demo",
@@ -22,7 +22,7 @@
         "role": "Software Engineer",
         "title": "diconium",
         "date": "Nov 2023 - Present",
-        "summary": "Digital products and platforms for enterprise clients.",
+        "summary": "Digital products and platforms for enterprise clients in the automotive industry.",
         "details": "Design and development of identity and access management services using Java, Spring and Keycloak; <br/><br/> Integration of secure authentication flows across multiple client applications.",
         "skills": ["Java", "Spring Boot", "Keycloak"],
         "projects": [
