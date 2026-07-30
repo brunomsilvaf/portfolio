@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '@mui/material/Button';
 import DownloadIcon from '@mui/icons-material/Download';
@@ -53,22 +52,6 @@ export default function MainPage() {
           <Translator path="hero.tagline" />
         </HeroTagline>
         <HeroActions>
-          <Button
-            variant="contained"
-            size="large"
-            component={Link}
-            to="/#projects"
-          >
-            {t('actions.viewWork')}
-          </Button>
-          <Button
-            variant="outlined"
-            size="large"
-            component={Link}
-            to="/#contact"
-          >
-            {t('contact.heading')}
-          </Button>
           <Button
             variant="text"
             size="large"

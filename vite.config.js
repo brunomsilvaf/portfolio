@@ -12,12 +12,7 @@ export default defineConfig({
     watch: {
       // Some tools write atomic *.~tmp files (e.g. in src/assets); ignore them so
       // the native file watcher doesn't crash with EBUSY on Windows.
-      ignored: [
-        '**/node_modules/**',
-        '**/.git/**',
-        '**/build/**',
-        '**/*.~tmp'
-      ]
+      ignored: ['**/node_modules/**', '**/.git/**', '**/build/**', '**/*.~tmp']
     }
   },
   build: {

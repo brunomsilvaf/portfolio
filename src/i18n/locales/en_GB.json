@@ -1,7 +1,7 @@
 {
   "translations": {
     "role": "Software Engineer",
-    "profile": "As a software engineer, I have worked with IT companies across Europe, collaborating with people from all over the world.<br/><br/>I started out in a fast-moving environment building components of the Dutch pension administration system, where I developed strong technical, flexibility and adaptability skills. Looking for new challenges, I joined a cloud contact centre company, working alongside hundreds of talented engineers to deliver innovative solutions at scale. More recently, I have been designing identity and access management services and digital platforms for enterprise clients, with a focus on secure and reliable back-end systems.<br/><br/>Over the past 8 years I have worked across many technologies, with a particular focus on Java and its ecosystem of frameworks and best practices. As a team player, I believe that collaboration and a positive attitude always bring the best results.",
+    "profile": "As a software engineer, I have worked with IT companies across Europe, collaborating with people from all over the world.<br/><br/>I started out in a fast-moving environment building components of a Dutch pension administration system, where I developed strong technical, flexibility and adaptability skills. Looking for new challenges, I joined a cloud contact centre software company, working alongside hundreds of talented engineers to deliver innovative solutions at scale. More recently, I have been designing identity and access management services and digital platforms for enterprise clients, with a focus on secure and reliable back-end systems.<br/><br/>Over the past 8 years I have worked across many technologies, with a particular focus on Java and its ecosystem of frameworks and best practices. As a team player, I believe that collaboration and a positive attitude always bring the best results.",
     "actions": {
       "viewCode": "Code",
       "liveDemo": "Live demo",
@@ -24,7 +24,7 @@
         "date": "Nov 2023 - Present",
         "summary": "Digital products and platforms for enterprise clients.",
         "details": "Design and development of identity and access management services using Java, Spring and Keycloak; <br/><br/> Integration of secure authentication flows across multiple client applications.",
-        "skills": ["Java", "Spring", "Keycloak"],
+        "skills": ["Java", "Spring Boot", "Keycloak"],
         "projects": [
           {
             "name": "One Business ID",
@@ -47,9 +47,6 @@
         "skills": [
           "Java",
           "Quarkus",
-          "Docker",
-          "Git",
-          "GitHub",
           "Azure Storage"
         ],
         "projects": [
@@ -61,23 +58,21 @@
         ]
       },
       "cgi": {
-        "role": "Software Developer",
+        "role": "Software Engineer",
         "title": "CGI",
         "date": "Jan 2021 - Jun 2021",
         "summary": "Acquisition of RiskCo by a consortium which includes CGI.<br/><br/>Same responsibilities as in the previous role.",
-        "details": "",
-        "skills": ["Java", "Spring Boot", "Groovy", "Docker"]
+        "details": ""
       },
       "riskco": {
-        "role": "Software Developer",
+        "role": "Software Engineer",
         "title": "InAdmin RiskCo",
         "date": "Feb 2018 - Dec 2020",
         "summary": "Administrative solutions for Dutch pension institutions. Fast-moving environment requiring a great sense of resilience and adaptability to multiple technologies and projects.",
-        "details": "Development of client-server components for a PaaS system, mainly based on Java, Spring Boot and ReactJS with a GraphQL API, to visualize and treat of big sets of pension data; <br/><br/> Development and maintenance of Groovy libraries; <br/><br/>Customer support to a client-server Windows based application (C#) used in the calculation of theoretical prices for bank products; <br/><br/>Customer support for mobile (Android and iOS) applications and maintenance of existing Excel Macros; <br/><br/>Implementation of BPMN models to be integrated in the PaaS system",
+        "details": "Development of client-server components for a PaaS system, mainly based on Java, Spring Boot and ReactJS with a GraphQL API, to visualize and treat of big sets of pension data; <br/><br/> Development and maintenance of Groovy libraries; <br/><br/>Customer support to a client-server Windows based application (C#) used in the calculation of theoretical prices for bank products; <br/><br/>Customer support for mobile (Android and iOS) applications and maintenance of existing Excel Macros; <br/><br/>Implementation of BPMN models to be integrated in the PaaS system.",
         "skills": [
           "Java",
           "Spring Boot",
-          "Docker",
           "ReactJS",
           "GraphQL",
           "Groovy",
@@ -139,28 +134,20 @@
     "skills": {
       "title": "Skills",
       "subtitle": "Technologies and tools I work with.",
-      "categories": [
-        {
-          "name": "Languages",
-          "items": ["Java", "JavaScript", "TypeScript", "Ruby", "C#", "Groovy", "SQL"]
-        },
-        {
-          "name": "Frameworks & Libraries",
-          "items": ["Spring Boot", "Quarkus", "React", "GraphQL", "Node.js"]
-        },
-        {
-          "name": "Tools & Platforms",
-          "items": ["Docker", "Git", "GitHub", "Keycloak", "Maven"]
-        },
-        {
-          "name": "Cloud & DevOps",
-          "items": ["Azure", "AWS", "CI/CD", "Kubernetes"]
-        }
-      ]
+      "legend": {
+        "strong": "Proficient",
+        "familiar": "Familiar"
+      },
+      "categories": {
+        "languages": "Languages",
+        "frameworks": "Frameworks & Libraries",
+        "tools": "Tools & Platforms",
+        "cloud": "Cloud & DevOps"
+      }
     },
     "projects": {
       "title": "Projects",
-      "subtitle": "A selection of things I have built.",
+      "subtitle": "A selection of projects I have built or contributed to.",
       "items": [
         {
           "title": "Personal Portfolio",
@@ -171,7 +158,7 @@
         },
         {
           "title": "CMUC Website",
-          "description": "Website for the Coro Misto da Universidade de Coimbra (CMUC), the University of Coimbra's mixed choir, presenting the choir, its history and its tours.",
+          "description": "Website for the Coro Misto da Universidade de Coimbra (CMUC), presenting the choir, its history and its tours.",
           "tags": ["React", "Vite"],
           "demo": "https://www.cmuc.pt/"
         }
@@ -182,20 +169,20 @@
       "subtitle": "Events I have attended.",
       "items": [
         {
-          "name": "JNation 2022",
-          "date": "June 2022 · Coimbra",
-          "description": "International software developer conference at Convento São Francisco, gathering around 900 attendees and 40 speakers from companies like Google, Oracle and Red Hat around Java, JavaScript, cloud, AI/ML and security."
-        },
-        {
           "name": "JNation 2024",
           "date": "June 2024 · Coimbra",
           "description": "7th edition of the annual software development conference, with dozens of technical talks on Java, JavaScript, cloud infrastructure and a new focus on artificial intelligence and machine learning."
+        },
+        {
+          "name": "JNation 2022",
+          "date": "June 2022 · Coimbra",
+          "description": "International software developer conference at Convento São Francisco, gathering around 900 attendees and 40 speakers from companies like Google, Oracle and Red Hat around Java, JavaScript, cloud, AI/ML and security."
         }
       ]
     },
     "associativism": {
       "title": "Associativism",
-      "description": "Throughout my academic path I took part in several editions of engineering and robotics competitions — such as Bot Olympics and EBEC Coimbra — both as a participant and as an organiser. I was also a board member of the IEEE UC Student Branch, where I organised numerous workshops and the 2016 Leadership Camp.<br/><br/>Beyond engineering associations, I sang in a university choir (CMUC), serving as vice-president for a year and developing strong teamwork and leadership skills.<br/><br/>Whenever I can, I also take part in volunteering activities, such as helping at a local cat shelter and supporting the restoration of the native forest of Serra do Buçaco."
+      "description": "Throughout my academic path I took part in several editions of engineering and robotics competitions — such as Bot Olympics and EBEC Coimbra — both as a participant and as an organiser. I was also a board member of the IEEE UC Student Branch, where I organised numerous workshops and the 2016 Leadership Camp.<br/><br/>Beyond engineering associations, I was a member of a university choir (CMUC) for many years, serving as vice-president for a year and developing strong teamwork and leadership skills.<br/><br/>In the past, I also took part in volunteering activities, such as helping at a local cat shelter and supporting the restoration of the native forest of Serra do Buçaco."
     },
     "hobbies": {
       "title": "Hobbies",
@@ -203,12 +190,12 @@
         {
           "icon": "music",
           "name": "Music",
-          "description": "Singing in a university choir, with a bit of piano on the side."
+          "description": "Singing in choirs, with a bit of piano or guitar on the side."
         },
         {
           "icon": "puzzling",
           "name": "Puzzling",
-          "description": "Big jigsaw puzzles and the occasional international speed-puzzling competition."
+          "description": "Big jigsaw puzzle marathons and many international speed-puzzling competitions."
         },
         {
           "icon": "sports",
@@ -218,7 +205,7 @@
         {
           "icon": "games",
           "name": "Video & Board Games",
-          "description": "From Mario Kart to chess and Catan."
+          "description": "Anything from Catan to Mario Kart or Chess. Just no Monopoly please."
         }
       ]
     },

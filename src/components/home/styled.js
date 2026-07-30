@@ -61,7 +61,8 @@ export const LogoContainer = styled.img`
 
 export const LogoLink = styled.a`
   display: inline-block;
-  transition: opacity ${(props) => props.theme.transition},
+  transition:
+    opacity ${(props) => props.theme.transition},
     transform ${(props) => props.theme.transition};
   &:hover {
     opacity: 0.75;
@@ -79,6 +80,14 @@ export const ChipRow = styled.div`
   flex-wrap: wrap;
   gap: 8px;
   margin-top: 12px;
+`;
+
+export const SkillsLegend = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
 `;
 
 export const SkillsGrid = styled.div`

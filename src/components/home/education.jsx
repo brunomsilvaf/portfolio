@@ -16,12 +16,6 @@ import ActiveSpaceLogo from '../../assets/logos/activespacetech.png';
 
 const ENTRIES = [
   {
-    key: 'masters',
-    logo: FctucLogo,
-    height: '40px',
-    url: 'https://www.uc.pt/fctuc/'
-  },
-  {
     key: 'curricular_internship',
     logo: ActiveSpaceLogo,
     height: '30px',
@@ -32,6 +26,12 @@ const ENTRIES = [
     logo: ActiveSpaceLogo,
     height: '30px',
     url: 'https://www.activespacetech.com/'
+  },
+  {
+    key: 'masters',
+    logo: FctucLogo,
+    height: '40px',
+    url: 'https://www.uc.pt/fctuc/'
   }
 ];
 const LANGUAGES = ['pt', 'en', 'de'];

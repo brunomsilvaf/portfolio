@@ -3,9 +3,9 @@ import SocialData from './SocialData';
 // Keys mirror the order used across the site (work-experience.jsx, education.jsx).
 const JOB_KEYS = ['diconium', 'talkdesk', 'cgi', 'riskco'];
 const EDUCATION_KEYS = [
-  'masters',
   'curricular_internship',
-  'summer_internship'
+  'summer_internship',
+  'masters'
 ];
 const LANGUAGE_KEYS = ['pt', 'en', 'de'];
 

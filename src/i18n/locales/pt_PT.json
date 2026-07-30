@@ -1,7 +1,7 @@
 {
   "translations": {
     "role": "Engenheiro de Software",
-    "profile": "Como engenheiro de software, trabalhei com várias empresas de TI, colaborando com pessoas de todo o mundo.<br/><br/>Comecei num ambiente dinâmico, a construir componentes do sistema holandês de administração de pensões, onde desenvolvi sólidas competências técnicas, de flexibilidade e de adaptabilidade. Em busca de novos desafios, juntei-me a uma empresa de contact center na cloud, trabalhando ao lado de centenas de engenheiros de topo para entregar soluções inovadoras em grande escala. Mais recentemente, tenho concebido serviços de gestão de identidade e acessos e plataformas digitais para clientes empresariais, com foco em sistemas back-end seguros e fiáveis.<br/><br/>Ao longo dos últimos 8 anos, trabalhei com muitas tecnologias, com particular foco em Java e no seu ecossistema de frameworks e boas práticas. Como alguém que valoriza o trabalho em equipa, acredito que a colaboração e uma atitude positiva trazem sempre os melhores resultados.",
+    "profile": "Como engenheiro de software, trabalhei com várias empresas de TI, colaborando com pessoas de todo o mundo.<br/><br/>Comecei num ambiente dinâmico, a construir componentes de um sistema holandês de administração de pensões, onde desenvolvi sólidas competências técnicas, de flexibilidade e de adaptabilidade. Em busca de novos desafios, juntei-me a uma empresa de software para contact centers na cloud, trabalhando ao lado de centenas de engenheiros de topo para entregar soluções inovadoras em grande escala. Mais recentemente, tenho concebido serviços de gestão de identidade e acessos e plataformas digitais para clientes empresariais, com foco em sistemas back-end seguros e fiáveis.<br/><br/>Ao longo dos últimos 8 anos, trabalhei com muitas tecnologias, com particular foco em Java e no seu ecossistema de frameworks e boas práticas. Como alguém que valoriza o trabalho em equipa, acredito que a colaboração e uma atitude positiva trazem sempre os melhores resultados.",
     "actions": {
       "viewCode": "Código",
       "liveDemo": "Ver online",
@@ -24,7 +24,7 @@
         "date": "Nov 2023 - Presente",
         "summary": "Produtos e plataformas digitais para clientes empresariais.",
         "details": "Conceção e desenvolvimento de serviços de gestão de identidade e acessos com Java, Spring e Keycloak; <br/><br/> Integração de fluxos de autenticação seguros em várias aplicações cliente.",
-        "skills": ["Java", "Spring", "Keycloak"],
+        "skills": ["Java", "Spring Boot", "Keycloak"],
         "projects": [
           {
             "name": "One Business ID",
@@ -47,9 +47,6 @@
         "skills": [
           "Java",
           "Quarkus",
-          "Docker",
-          "Git",
-          "GitHub",
           "Azure Storage"
         ],
         "projects": [
@@ -61,23 +58,21 @@
         ]
       },
       "cgi": {
-        "role": "Programador de Software",
+        "role": "Engenheiro de Software",
         "title": "CGI",
         "date": "Jan 2021 - Jun 2021",
         "summary": "Aquisição da RiskCo por um consórcio que inclui a CGI.<br/><br/>Mesmas responsabilidades do cargo anterior.",
-        "details": "",
-        "skills": ["Java", "Spring Boot", "Groovy", "Docker"]
+        "details": ""
       },
       "riskco": {
-        "role": "Programador de Software",
+        "role": "Engenheiro de Software",
         "title": "InAdmin RiskCo",
         "date": "Fev 2018 - Dez 2020",
         "summary": "Soluções administrativas para instituições de pensões holandesas. Ambiente dinâmico que exige grande sentido de resiliência e adaptabilidade a múltiplas tecnologias e projetos.",
-        "details": "Desenvolvimento de componentes cliente-servidor para um sistema PaaS, essencialmente baseado em Java, Spring Boot e ReactJS com uma API GraphQL, para visualizar e tratar grandes conjuntos de dados de pensões; <br/><br/> Desenvolvimento e manutenção de bibliotecas em Groovy; <br/><br/>Apoio ao cliente numa aplicação cliente-servidor para Windows (C#) usada no cálculo de preços teóricos de produtos bancários; <br/><br/>Apoio ao cliente em aplicações móveis (Android e iOS) e manutenção de macros de Excel existentes; <br/><br/>Implementação de modelos BPMN para integração no sistema PaaS",
+        "details": "Desenvolvimento de componentes cliente-servidor para um sistema PaaS, essencialmente baseado em Java, Spring Boot e ReactJS com uma API GraphQL, para visualizar e tratar grandes conjuntos de dados de pensões; <br/><br/> Desenvolvimento e manutenção de bibliotecas em Groovy; <br/><br/>Apoio ao cliente numa aplicação cliente-servidor para Windows (C#) usada no cálculo de preços teóricos de produtos bancários; <br/><br/>Apoio ao cliente em aplicações móveis (Android e iOS) e manutenção de macros de Excel existentes; <br/><br/>Implementação de modelos BPMN para integração no sistema PaaS.",
         "skills": [
           "Java",
           "Spring Boot",
-          "Docker",
           "ReactJS",
           "GraphQL",
           "Groovy",
@@ -139,40 +134,32 @@
     "skills": {
       "title": "Competências",
       "subtitle": "Tecnologias e ferramentas com que trabalho.",
-      "categories": [
-        {
-          "name": "Linguagens",
-          "items": ["Java", "JavaScript", "TypeScript", "Ruby", "C#", "Groovy", "SQL"]
-        },
-        {
-          "name": "Frameworks e Bibliotecas",
-          "items": ["Spring Boot", "Quarkus", "React", "GraphQL", "Node.js"]
-        },
-        {
-          "name": "Ferramentas e Plataformas",
-          "items": ["Docker", "Git", "GitHub", "Keycloak", "Maven"]
-        },
-        {
-          "name": "Cloud e DevOps",
-          "items": ["Azure", "AWS", "CI/CD", "Kubernetes"]
-        }
-      ]
+      "legend": {
+        "strong": "Proficiente",
+        "familiar": "Familiarizado"
+      },
+      "categories": {
+        "languages": "Linguagens",
+        "frameworks": "Frameworks e Bibliotecas",
+        "tools": "Ferramentas e Plataformas",
+        "cloud": "Cloud e DevOps"
+      }
     },
     "projects": {
       "title": "Projetos",
-      "subtitle": "Uma seleção de coisas que construí.",
+      "subtitle": "Uma seleção de projetos que construí ou para os quais contribuí.",
       "items": [
         {
           "title": "Portefólio Pessoal",
-          "description": "Este próprio website — um portefólio de página única e responsivo, construído com React e Vite, com internacionalização e um design orientado a componentes.",
-          "tags": ["React", "Vite", "styled-components", "i18next"],
+          "description": "Este próprio website — um portefólio de página única e responsivo, construído com React e Vite.",
+          "tags": ["React", "Vite", "i18next"],
           "repo": "https://github.com/brunomsilvaf/portfolio",
           "demo": "https://brunomsilvaf.github.io/portfolio/"
         },
         {
           "title": "Website do CMUC",
-          "description": "Website do Coro Misto da Universidade de Coimbra (CMUC), o coro misto da Universidade de Coimbra, que apresenta o coro, a sua história e as suas digressões.",
-          "tags": ["React", "Vite"],
+          "description": "Website do Coro Misto da Universidade de Coimbra (CMUC), que apresenta o coro, a sua história e as suas digressões.",
+          "tags": ["React", "Vite", "i18next"],
           "demo": "https://www.cmuc.pt/"
         }
       ]
@@ -182,20 +169,20 @@
       "subtitle": "Eventos em que participei.",
       "items": [
         {
-          "name": "JNation 2022",
-          "date": "Junho 2022 · Coimbra",
-          "description": "Conferência internacional de programadores no Convento São Francisco, reunindo cerca de 900 participantes e 40 oradores de empresas como Google, Oracle e Red Hat, em torno de Java, JavaScript, cloud, IA/ML e segurança."
-        },
-        {
           "name": "JNation 2024",
           "date": "Junho 2024 · Coimbra",
           "description": "7.ª edição da conferência anual de desenvolvimento de software, com dezenas de talks técnicos sobre Java, JavaScript, infraestrutura cloud e um novo foco em inteligência artificial e machine learning."
+        },
+        {
+          "name": "JNation 2022",
+          "date": "Junho 2022 · Coimbra",
+          "description": "Conferência internacional de programadores no Convento São Francisco, reunindo cerca de 900 participantes e 40 oradores de empresas como Google, Oracle e Red Hat, em torno de Java, JavaScript, cloud, IA/ML e segurança."
         }
       ]
     },
     "associativism": {
       "title": "Associativismo",
-      "description": "Ao longo do meu percurso académico, participei em várias edições de competições de engenharia e robótica — como as Bot Olympics e o EBEC Coimbra — tanto como participante como organizador. Fui também membro da direção do Ramo de Estudantes IEEE UC, onde organizei vários workshops e o Leadership Camp de 2016.<br/><br/>Para além das associações de engenharia, cantei num coro universitário (CMUC), onde fui vice-presidente durante um ano, desenvolvendo fortes competências de trabalho em equipa e de liderança.<br/><br/>Sempre que posso, participo também em atividades de voluntariado, como apoiar um abrigo local de gatos e a recuperação da floresta nativa da Serra do Buçaco."
+      "description": "Ao longo do meu percurso académico, participei em várias edições de competições de engenharia e robótica — como as Bot Olympics e o EBEC Coimbra — tanto como participante como organizador. Fui também membro da direção do Ramo de Estudantes IEEE UC, onde organizei vários workshops e o Leadership Camp de 2016.<br/><br/>Para além das associações de engenharia, foi membro de num coro universitário (CMUC) durante vários anos, tendo sido vice-presidente durante um ano, desenvolvendo fortes competências de trabalho em equipa e de liderança.<br/><br/>No passado, também participei em atividades de voluntariado, como apoiar um abrigo local de gatos e a recuperação da floresta nativa da Serra do Buçaco."
     },
     "hobbies": {
       "title": "Passatempos",
@@ -203,28 +190,28 @@
         {
           "icon": "music",
           "name": "Música",
-          "description": "Cantar num coro universitário e, à parte, tocar um pouco de piano."
+          "description": "Cantar em coros e tocar um pouco de piano ou guitarra."
         },
         {
           "icon": "puzzling",
           "name": "Puzzles",
-          "description": "Grandes puzzles e, de vez em quando, competições internacionais de speed puzzle."
+          "description": "Maratonas de grandes puzzles e diversas competições internacionais de speed puzzle."
         },
         {
           "icon": "sports",
           "name": "Desporto",
-          "description": "Padel casual e CrossFit para me manter ativo."
+          "description": "Padel e CrossFit casualmente para me manter ativo."
         },
         {
           "icon": "games",
           "name": "Jogos de Vídeo e de Tabuleiro",
-          "description": "Do Mario Kart ao xadrez e ao Catan."
+          "description": "Qualquer jogo desde Catan a Mario Kart ou Xadrez. Monopólio não, por favor."
         }
       ]
     },
     "contact": {
       "title": "Contacto",
-      "heading": "Vamos falar",
+      "heading": "Entra em contacto",
       "description": "Estou sempre disponível para conversar — seja sobre um projeto, uma oportunidade, ou apenas para dizer olá.",
       "rights": "Todos os direitos reservados."
     }
