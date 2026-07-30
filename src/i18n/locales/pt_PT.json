@@ -43,7 +43,7 @@
         "title": "Talkdesk",
         "date": "Jul 2021 - Mai 2023",
         "summary": "Soluções de Workforce Engagement and Management para contact centers.",
-        "details": "Desenvolvimento de serviços core para uma arquitetura de microsserviços orientada a eventos com Java 17 e Quarkus; <br/><br/> Desenvolvimento de uma solução de armazenamento multi-storage em Java e Ruby e integração com Azure Storage.",
+        "details": "Desenvolvimento de serviços core para uma arquitetura de microsserviços orientada a eventos com Java e Quarkus; <br/><br/> Desenvolvimento de uma solução de armazenamento multi-storage em Java e Ruby e integração com Azure Storage.",
         "skills": [
           "Java",
           "Quarkus",
@@ -182,7 +182,7 @@
     },
     "associativism": {
       "title": "Associativismo",
-      "description": "Ao longo do meu percurso académico, participei em várias edições de competições de engenharia e robótica — como as Bot Olympics e o EBEC Coimbra — tanto como participante como organizador. Fui também membro da direção do Ramo de Estudantes IEEE UC, onde organizei vários workshops e o Leadership Camp de 2016.<br/><br/>Para além das associações de engenharia, foi membro de num coro universitário (CMUC) durante vários anos, tendo sido vice-presidente durante um ano, desenvolvendo fortes competências de trabalho em equipa e de liderança.<br/><br/>No passado, também participei em atividades de voluntariado, como apoiar um abrigo local de gatos e a recuperação da floresta nativa da Serra do Buçaco."
+      "description": "Ao longo do meu percurso académico, participei em várias edições de competições de engenharia e robótica — como as Bot Olympics e o EBEC Coimbra — tanto como participante como organizador. Fui também membro da direção do Ramo de Estudantes IEEE UC, onde organizei vários workshops e o Leadership Camp de 2016.<br/><br/>Para além das associações de engenharia, fui membro de num coro universitário (CMUC) durante vários anos, tendo sido Vice-Presidente durante um ano, desenvolvendo fortes competências de trabalho em equipa e de liderança.<br/><br/>No passado, também participei em atividades de voluntariado, como apoiar um abrigo local de gatos e a recuperação da floresta nativa da Serra do Buçaco."
     },
     "hobbies": {
       "title": "Passatempos",
@@ -190,7 +190,7 @@
         {
           "icon": "music",
           "name": "Música",
-          "description": "Cantar em coros e tocar um pouco de piano ou guitarra."
+          "description": "Cantar em coros e tocar instrumentos, desde piano a guitarra."
         },
         {
           "icon": "puzzling",
@@ -200,7 +200,7 @@
         {
           "icon": "sports",
           "name": "Desporto",
-          "description": "Padel e CrossFit casualmente para me manter ativo."
+          "description": "Padel e CrossFit para me manter ativo."
         },
         {
           "icon": "games",

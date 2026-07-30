@@ -43,7 +43,7 @@
         "title": "Talkdesk",
         "date": "Jul 2021 - May 2023",
         "summary": "Workforce Engagement and Management solutions for contact  centers.",
-        "details": "Development of core services for an event-driven microservice architecture using Java 17 and Quarkus; <br/><br/> Development of a multi-storage solution in Java and Ruby and integration with Azure Storage.",
+        "details": "Development of core services for an event-driven microservice architecture using Java and Quarkus; <br/><br/> Development of a multi-storage solution in Java and Ruby and integration with Azure Storage.",
         "skills": [
           "Java",
           "Quarkus",
@@ -182,7 +182,7 @@
     },
     "associativism": {
       "title": "Associativism",
-      "description": "Throughout my academic path I took part in several editions of engineering and robotics competitions — such as Bot Olympics and EBEC Coimbra — both as a participant and as an organiser. I was also a board member of the IEEE UC Student Branch, where I organised numerous workshops and the 2016 Leadership Camp.<br/><br/>Beyond engineering associations, I was a member of a university choir (CMUC) for many years, serving as vice-president for a year and developing strong teamwork and leadership skills.<br/><br/>In the past, I also took part in volunteering activities, such as helping at a local cat shelter and supporting the restoration of the native forest of Serra do Buçaco."
+      "description": "Throughout my academic path I took part in several editions of engineering and robotics competitions — such as Bot Olympics and EBEC Coimbra — both as a participant and as an organiser. I was also a board member of the IEEE UC Student Branch, where I organised numerous workshops and the 2016 Leadership Camp.<br/><br/>Beyond engineering associations, I was a member of a university choir (CMUC) for many years, serving as Vice-President for a year and developing strong teamwork and leadership skills.<br/><br/>In the past, I also took part in volunteering activities, such as helping at a local cat shelter and supporting the restoration of the native forest of Serra do Buçaco."
     },
     "hobbies": {
       "title": "Hobbies",
@@ -200,7 +200,7 @@
         {
           "icon": "sports",
           "name": "Sports",
-          "description": "Casual padel and CrossFit to stay active."
+          "description": "Padel and CrossFit to stay active."
         },
         {
           "icon": "games",
