@@ -1,4 +1,5 @@
 import SocialData from './SocialData';
+import SkillsData from './SkillsData';
 
 // Keys mirror the order used across the site (work-experience.jsx, education.jsx).
 const JOB_KEYS = ['diconium', 'talkdesk', 'cgi', 'riskco'];
@@ -83,7 +84,10 @@ export default function getCvData(t) {
     },
     skills: {
       title: t('skills.title'),
-      categories: arr('skills.categories')
+      categories: SkillsData.map((category) => ({
+        name: t(`skills.categories.${category.key}`),
+        items: category.items.map((item) => item.name)
+      }))
     },
     projects: {
       title: t('projects.title'),

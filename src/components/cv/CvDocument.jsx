@@ -157,9 +157,9 @@ const styles = StyleSheet.create({
   languages: { marginTop: 10 }
 });
 
-function Section({ title, children }) {
+function Section({ title, children, breakBefore = false }) {
   return (
-    <View style={styles.section}>
+    <View style={styles.section} break={breakBefore}>
       <View wrap={false}>
         <Text style={styles.sectionTitle}>{title}</Text>
       </View>
@@ -170,7 +170,8 @@ function Section({ title, children }) {
 
 Section.propTypes = {
   title: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
+  breakBefore: PropTypes.bool
 };
 
 function Bullet({ children }) {
@@ -349,7 +350,7 @@ export default function CvDocument({ data }) {
           ))}
         </Section>
 
-        <Section title={projects.title}>
+        <Section title={projects.title} breakBefore>
           {projects.items.map((project) => (
             <View key={project.title} style={styles.item} wrap={false}>
               <Text>

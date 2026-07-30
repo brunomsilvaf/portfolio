@@ -151,7 +151,7 @@
       "items": [
         {
           "title": "Personal Portfolio",
-          "description": "This very website — a responsive single-page portfolio built with React and Vite, featuring internationalization and a component-driven design.",
+          "description": "A responsive single-page portfolio built with React and Vite, featuring internationalization and a component-driven design.",
           "tags": ["React", "Vite", "styled-components", "i18next"],
           "repo": "https://github.com/brunomsilvaf/portfolio",
           "demo": "https://brunomsilvaf.github.io/portfolio/"

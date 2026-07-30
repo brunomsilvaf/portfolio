@@ -151,7 +151,7 @@
       "items": [
         {
           "title": "Portefólio Pessoal",
-          "description": "Este próprio website — um portefólio de página única e responsivo, construído com React e Vite.",
+          "description": "Um portefólio de página única e responsivo, construído com React e Vite.",
           "tags": ["React", "Vite", "i18next"],
           "repo": "https://github.com/brunomsilvaf/portfolio",
           "demo": "https://brunomsilvaf.github.io/portfolio/"
