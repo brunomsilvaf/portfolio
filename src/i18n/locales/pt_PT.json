@@ -1,7 +1,7 @@
 {
   "translations": {
     "role": "Engenheiro de Software",
-    "profile": "Ao seguir uma carreira como engenheiro de software, tive contacto com diferentes empresas de TI, conhecendo pessoas de todo o mundo.<br/><br/>Tendo trabalhado num ambiente dinâmico em vários projetos relacionados com o sistema holandês de administração de pensões, consegui desenvolver competências técnicas, de flexibilidade e de adaptabilidade essenciais. Em busca de novos desafios, juntei-me a uma empresa de contact center na cloud, trabalhando com centenas de engenheiros de topo para entregar as melhores soluções inovadoras ao mercado.<br/><br/>Ao longo dos últimos 5 anos, trabalhei com muitas tecnologias diferentes, com particular foco na linguagem Java e nas suas melhores frameworks e práticas. Como alguém que valoriza o trabalho em equipa, acredito que o espírito de equipa e a positividade trazem sempre os melhores resultados.",
+    "profile": "Como engenheiro de software, trabalhei com várias empresas de TI, colaborando com pessoas de todo o mundo.<br/><br/>Comecei num ambiente dinâmico, a construir componentes do sistema holandês de administração de pensões, onde desenvolvi sólidas competências técnicas, de flexibilidade e de adaptabilidade. Em busca de novos desafios, juntei-me a uma empresa de contact center na cloud, trabalhando ao lado de centenas de engenheiros de topo para entregar soluções inovadoras em grande escala. Mais recentemente, tenho concebido serviços de gestão de identidade e acessos e plataformas digitais para clientes empresariais, com foco em sistemas back-end seguros e fiáveis.<br/><br/>Ao longo dos últimos 8 anos, trabalhei com muitas tecnologias, com particular foco em Java e no seu ecossistema de frameworks e boas práticas. Como alguém que valoriza o trabalho em equipa, acredito que a colaboração e uma atitude positiva trazem sempre os melhores resultados.",
     "actions": {
       "viewCode": "Código",
       "liveDemo": "Ver online",
@@ -24,7 +24,19 @@
         "date": "Nov 2023 - Presente",
         "summary": "Produtos e plataformas digitais para clientes empresariais.",
         "details": "Conceção e desenvolvimento de serviços de gestão de identidade e acessos com Java, Spring e Keycloak; <br/><br/> Integração de fluxos de autenticação seguros em várias aplicações cliente.",
-        "skills": ["Java", "Spring", "Keycloak"]
+        "skills": ["Java", "Spring", "Keycloak"],
+        "projects": [
+          {
+            "name": "One Business ID",
+            "description": "Identidade e single sign-on centralizados para clientes empresariais do Grupo Volkswagen, dando acesso seguro aos serviços digitais do Grupo.",
+            "url": "https://www.volkswagen-nutzfahrzeuge.de/de/branchenloesungen-und-gewerbekunden/exklusive-vorteile-fuer-gewerbekunden.html"
+          },
+          {
+            "name": "myFleetHub",
+            "description": "Plataforma digital de gestão de frotas que dá aos clientes empresariais do Grupo Volkswagen um único lugar para gerir veículos e contratos, acompanhar encomendas e gerir atualizações de software.",
+            "url": "https://www.groupfleet.com/en/my-fleet-hub/"
+          }
+        ]
       },
       "talkdesk": {
         "role": "Engenheiro de Software",
@@ -39,6 +51,13 @@
           "Git",
           "GitHub",
           "Azure Storage"
+        ],
+        "projects": [
+          {
+            "name": "Talkdesk Performance Management",
+            "description": "Aplicação para contact centers que motiva os agentes com objetivos orientados por dados, leaderboards e coaching, combinando métricas de produtividade com indicadores de qualidade.",
+            "url": "https://support.talkdesk.com/hc/en-us/articles/4407628119451-Performance-Management-Overview"
+          }
         ]
       },
       "cgi": {
@@ -63,6 +82,13 @@
           "GraphQL",
           "Groovy",
           "C#"
+        ],
+        "projects": [
+          {
+            "name": "RiskCo Administration Platform",
+            "description": "Plataforma de administração de pensões (PaaS) para fundos de pensões holandeses como o Achmea Pensioenfonds PGB, usada para processar e visualizar grandes conjuntos de dados de pensões.",
+            "url": "https://news.achmea.nl/achmea-pensioenfonds-pgb-and-cgi-to-launch-pension-administration-platform/"
+          }
         ]
       }
     },
@@ -142,40 +168,57 @@
           "tags": ["React", "Vite", "styled-components", "i18next"],
           "repo": "https://github.com/brunomsilvaf/portfolio",
           "demo": "https://brunomsilvaf.github.io/portfolio/"
+        },
+        {
+          "title": "Website do CMUC",
+          "description": "Website do Coro Misto da Universidade de Coimbra (CMUC), o coro misto da Universidade de Coimbra, que apresenta o coro, a sua história e as suas digressões.",
+          "tags": ["React", "Vite"],
+          "demo": "https://www.cmuc.pt/"
         }
       ]
     },
     "conferences": {
       "title": "Conferências",
       "subtitle": "Eventos em que participei.",
-      "items": ["JNation 2022", "JNation 2024"]
+      "items": [
+        {
+          "name": "JNation 2022",
+          "date": "Junho 2022 · Coimbra",
+          "description": "Conferência internacional de programadores no Convento São Francisco, reunindo cerca de 900 participantes e 40 oradores de empresas como Google, Oracle e Red Hat, em torno de Java, JavaScript, cloud, IA/ML e segurança."
+        },
+        {
+          "name": "JNation 2024",
+          "date": "Junho 2024 · Coimbra",
+          "description": "7.ª edição da conferência anual de desenvolvimento de software, com dezenas de talks técnicos sobre Java, JavaScript, infraestrutura cloud e um novo foco em inteligência artificial e machine learning."
+        }
+      ]
     },
     "associativism": {
       "title": "Associativismo",
-      "description": "Ao longo do meu percurso académico, participei em várias edições de competições de engenharia e robótica, tanto como participante como colaborador: Bot Olympics e EBEC Coimbra. Fui também membro da direção do Ramo de Estudantes IEEE UC, organizando vários workshops e o Leadership Camp de 2016.<br/><br/>Para além de associações e competições de engenharia, integrei um coro universitário (CMUC), onde fui vice-presidente durante um ano, desenvolvendo muitas competências associativas e de liderança.<br/><br/> Ocasionalmente, participo em atividades de voluntariado, como no apoio a um abrigo local de gatos e na recuperação da floresta nativa da Serra do Buçaco."
+      "description": "Ao longo do meu percurso académico, participei em várias edições de competições de engenharia e robótica — como as Bot Olympics e o EBEC Coimbra — tanto como participante como organizador. Fui também membro da direção do Ramo de Estudantes IEEE UC, onde organizei vários workshops e o Leadership Camp de 2016.<br/><br/>Para além das associações de engenharia, cantei num coro universitário (CMUC), onde fui vice-presidente durante um ano, desenvolvendo fortes competências de trabalho em equipa e de liderança.<br/><br/>Sempre que posso, participo também em atividades de voluntariado, como apoiar um abrigo local de gatos e a recuperação da floresta nativa da Serra do Buçaco."
     },
     "hobbies": {
       "title": "Passatempos",
       "items": [
         {
-          "icon": "choir",
-          "name": "Canto Coral",
-          "description": "Cantar num coro universitário e explorar diferentes repertórios vocais."
+          "icon": "music",
+          "name": "Música",
+          "description": "Cantar num coro universitário e, à parte, tocar um pouco de piano."
         },
         {
-          "icon": "padel",
-          "name": "Padel",
-          "description": "Jogar padel regularmente para me manter ativo e desfrutar de alguma competição amigável."
+          "icon": "puzzling",
+          "name": "Puzzles",
+          "description": "Grandes puzzles e, de vez em quando, competições internacionais de speed puzzle."
         },
         {
-          "icon": "boardgames",
-          "name": "Jogos de Tabuleiro",
-          "description": "Juntar amigos para noites de jogos de tabuleiro de estratégia e cooperativos."
+          "icon": "sports",
+          "name": "Desporto",
+          "description": "Padel casual e CrossFit para me manter ativo."
         },
         {
-          "icon": "editing",
-          "name": "Edição de Vídeo",
-          "description": "Editar vídeos de viagens e eventos como projeto criativo paralelo."
+          "icon": "games",
+          "name": "Jogos de Vídeo e de Tabuleiro",
+          "description": "Do Mario Kart ao xadrez e ao Catan."
         }
       ]
     },

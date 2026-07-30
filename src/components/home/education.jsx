@@ -10,9 +10,30 @@ import Typography from '@mui/material/Typography';
 import Chip from '@mui/material/Chip';
 import { useTranslation } from 'react-i18next';
 import { SubTitle } from '../../theme/GlobalStyles';
-import { EducationDetails, ChipRow } from './styled';
+import { EducationDetails, ChipRow, LogoContainer, LogoLink } from './styled';
+import FctucLogo from '../../assets/logos/fctuc.png';
+import ActiveSpaceLogo from '../../assets/logos/activespacetech.png';
 
-const ENTRIES = ['masters', 'curricular_internship', 'summer_internship'];
+const ENTRIES = [
+  {
+    key: 'masters',
+    logo: FctucLogo,
+    height: '40px',
+    url: 'https://www.uc.pt/fctuc/'
+  },
+  {
+    key: 'curricular_internship',
+    logo: ActiveSpaceLogo,
+    height: '30px',
+    url: 'https://www.activespacetech.com/'
+  },
+  {
+    key: 'summer_internship',
+    logo: ActiveSpaceLogo,
+    height: '30px',
+    url: 'https://www.activespacetech.com/'
+  }
+];
 const LANGUAGES = ['pt', 'en', 'de'];
 
 export default function Education() {
@@ -21,15 +42,15 @@ export default function Education() {
   return (
     <>
       <Timeline position="right" sx={{ px: { xs: 0, sm: 2 } }}>
-        {ENTRIES.map((key, index) => {
-          const base = `education.${key}`;
+        {ENTRIES.map((entry, index) => {
+          const base = `education.${entry.key}`;
           const details = t(`${base}.details`, {
             returnObjects: true,
             defaultValue: []
           });
 
           return (
-            <TimelineItem key={key}>
+            <TimelineItem key={entry.key}>
               <TimelineOppositeContent
                 variant="body2"
                 color="text.secondary"
@@ -42,18 +63,30 @@ export default function Education() {
                 {index < ENTRIES.length - 1 && <TimelineConnector />}
               </TimelineSeparator>
               <TimelineContent sx={{ pb: '40px' }}>
+                <LogoLink
+                  href={entry.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={t(`${base}.local`)}
+                >
+                  <LogoContainer
+                    src={entry.logo}
+                    alt={t(`${base}.title`)}
+                    height={entry.height}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </LogoLink>
+                <br />
                 <Typography
                   variant="body2"
                   color="text.secondary"
-                  sx={{ display: { xs: 'block', sm: 'none' }, mb: 0.5 }}
+                  sx={{ display: { xs: 'block', sm: 'none' }, mt: 0.5 }}
                 >
                   {t(`${base}.date`)}
                 </Typography>
                 <Typography variant="h6" component="span">
                   {t(`${base}.title`)}
-                </Typography>
-                <Typography color="text.secondary">
-                  {t(`${base}.local`)}
                 </Typography>
                 {Array.isArray(details) && details.length > 0 && (
                   <EducationDetails>

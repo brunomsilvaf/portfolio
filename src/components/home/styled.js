@@ -53,7 +53,21 @@ export const WorkContainer = styled.div`
   }
 `;
 
-export const LogoContainer = styled.img``;
+export const LogoContainer = styled.img`
+  display: inline-block;
+  filter: ${(props) =>
+    props.theme.mode === 'dark' ? 'brightness(0) invert(1)' : 'none'};
+`;
+
+export const LogoLink = styled.a`
+  display: inline-block;
+  transition: opacity ${(props) => props.theme.transition},
+    transform ${(props) => props.theme.transition};
+  &:hover {
+    opacity: 0.75;
+    transform: translateY(-1px);
+  }
+`;
 
 export const SectionSubtitle = styled.p`
   color: ${(props) => props.theme.color_muted};
@@ -93,13 +107,13 @@ export const ProjectsGrid = styled.div`
 
 export const ConferencesGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
 `;
 
 export const ConferenceCard = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.75rem;
   padding: 1.25rem 1.5rem;
   background: ${(props) => props.theme.color_surface};
@@ -107,11 +121,28 @@ export const ConferenceCard = styled.div`
   border-radius: 12px;
   svg {
     color: ${(props) => props.theme.color_accent};
+    flex-shrink: 0;
   }
+`;
+
+export const ConferenceInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 `;
 
 export const ConferenceName = styled.h4`
   text-transform: none;
+`;
+
+export const ConferenceDate = styled.span`
+  color: ${(props) => props.theme.color_muted};
+  font-size: 0.85rem;
+`;
+
+export const ConferenceText = styled.p`
+  color: ${(props) => props.theme.color_muted};
+  font-size: 0.9rem;
 `;
 
 export const HobbiesGrid = styled.div`

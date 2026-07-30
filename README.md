@@ -42,7 +42,7 @@ portfolio
 │   vite.config.js        Vite config (base path, dev server, chunking)
 │   package.json
 │
-└───public                static assets served as-is (cv.pdf, favicon, manifest, og-image)
+└───public                static assets served as-is (favicon, manifest, og-image)
 │
 └───src
     │   index.jsx         app bootstrap + HashRouter

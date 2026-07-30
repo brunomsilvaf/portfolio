@@ -9,7 +9,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import DownloadIcon from '@mui/icons-material/Download';
 import Translator from '../../i18n/Translator';
-import SocialData, { cvHref } from '../../data/SocialData';
+import SocialData from '../../data/SocialData';
+import useDownloadCv from '../cv/useDownloadCv';
 import {
   FooterContainer,
   FooterHeading,
@@ -21,6 +22,7 @@ import {
 
 export default function Footer() {
   const { t } = useTranslation();
+  const { downloadCv, loading } = useDownloadCv();
   const year = new Date().getFullYear();
 
   return (
@@ -74,9 +76,8 @@ export default function Footer() {
           variant="outlined"
           color="inherit"
           startIcon={<DownloadIcon />}
-          href={cvHref}
-          target="_blank"
-          rel="noopener noreferrer"
+          onClick={downloadCv}
+          disabled={loading}
         >
           {t('actions.downloadCv')}
         </Button>

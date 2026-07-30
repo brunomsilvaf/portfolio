@@ -1,7 +1,14 @@
 import React from 'react';
 import EventIcon from '@mui/icons-material/Event';
 import { useTranslation } from 'react-i18next';
-import { ConferencesGrid, ConferenceCard, ConferenceName } from './styled';
+import {
+  ConferencesGrid,
+  ConferenceCard,
+  ConferenceInfo,
+  ConferenceName,
+  ConferenceDate,
+  ConferenceText
+} from './styled';
 
 export default function Conferences() {
   const { t } = useTranslation();
@@ -12,10 +19,16 @@ export default function Conferences() {
 
   return (
     <ConferencesGrid>
-      {items.map((name) => (
-        <ConferenceCard key={name}>
+      {items.map((item) => (
+        <ConferenceCard key={item.name}>
           <EventIcon fontSize="large" />
-          <ConferenceName>{name}</ConferenceName>
+          <ConferenceInfo>
+            <ConferenceName>{item.name}</ConferenceName>
+            {item.date && <ConferenceDate>{item.date}</ConferenceDate>}
+            {item.description && (
+              <ConferenceText>{item.description}</ConferenceText>
+            )}
+          </ConferenceInfo>
         </ConferenceCard>
       ))}
     </ConferencesGrid>

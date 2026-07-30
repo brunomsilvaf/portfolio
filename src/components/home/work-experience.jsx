@@ -9,19 +9,37 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
 import Chip from '@mui/material/Chip';
+import Box from '@mui/material/Box';
+import Link from '@mui/material/Link';
+import LaunchIcon from '@mui/icons-material/Launch';
 import { useTranslation } from 'react-i18next';
 import Translator from '../../i18n/Translator';
 import CgiLogo from '../../assets/logos/cgi.png';
 import DiconiumLogo from '../../assets/logos/diconium.png';
 import RiskcoLogo from '../../assets/logos/riskco.png';
 import TalkdeskLogo from '../../assets/logos/talkdesk.png';
-import { LogoContainer } from './styled';
+import { LogoContainer, LogoLink } from './styled';
 
 const JOBS = [
-  { key: 'diconium', logo: DiconiumLogo, height: '22px' },
-  { key: 'talkdesk', logo: TalkdeskLogo, height: '22px' },
-  { key: 'cgi', logo: CgiLogo, height: '20px' },
-  { key: 'riskco', logo: RiskcoLogo, height: '32px' }
+  {
+    key: 'diconium',
+    logo: DiconiumLogo,
+    height: '40px',
+    url: 'https://diconium.com/'
+  },
+  {
+    key: 'talkdesk',
+    logo: TalkdeskLogo,
+    height: '30px',
+    url: 'https://www.talkdesk.com/'
+  },
+  {
+    key: 'cgi',
+    logo: CgiLogo,
+    height: '30px',
+    url: 'https://www.cgi.com/portugal/pt-pt'
+  },
+  { key: 'riskco', logo: RiskcoLogo, height: '40px' }
 ];
 
 export default function WorkExperience() {
@@ -32,6 +50,10 @@ export default function WorkExperience() {
       {JOBS.map((job, index) => {
         const base = `work-experience.${job.key}`;
         const skills = t(`${base}.skills`, {
+          returnObjects: true,
+          defaultValue: []
+        });
+        const projects = t(`${base}.projects`, {
           returnObjects: true,
           defaultValue: []
         });
@@ -50,13 +72,30 @@ export default function WorkExperience() {
               {index < JOBS.length - 1 && <TimelineConnector />}
             </TimelineSeparator>
             <TimelineContent sx={{ pb: '40px' }}>
-              <LogoContainer
-                src={job.logo}
-                alt={t(`${base}.title`)}
-                height={job.height}
-                loading="lazy"
-                decoding="async"
-              />
+              {job.url ? (
+                <LogoLink
+                  href={job.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={t(`${base}.title`)}
+                >
+                  <LogoContainer
+                    src={job.logo}
+                    alt={t(`${base}.title`)}
+                    height={job.height}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </LogoLink>
+              ) : (
+                <LogoContainer
+                  src={job.logo}
+                  alt={t(`${base}.title`)}
+                  height={job.height}
+                  loading="lazy"
+                  decoding="async"
+                />
+              )}
               <br />
               <Typography
                 variant="body2"
@@ -74,6 +113,41 @@ export default function WorkExperience() {
               <Typography>
                 <Translator path={`${base}.details`} />
               </Typography>
+              {Array.isArray(projects) && projects.length > 0 && (
+                <Box sx={{ mt: 2 }}>
+                  <Typography
+                    variant="overline"
+                    color="text.secondary"
+                    sx={{ display: 'block', lineHeight: 1.6 }}
+                  >
+                    {t('projects.title')}
+                  </Typography>
+                  <Stack spacing={1}>
+                    {projects.map((project) => (
+                      <Box key={project.name}>
+                        <Link
+                          href={project.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          variant="subtitle2"
+                          sx={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: 0.5,
+                            fontWeight: 700
+                          }}
+                        >
+                          {project.name}
+                          <LaunchIcon sx={{ fontSize: 14 }} />
+                        </Link>
+                        <Typography variant="body2" color="text.secondary">
+                          {project.description}
+                        </Typography>
+                      </Box>
+                    ))}
+                  </Stack>
+                </Box>
+              )}
               {Array.isArray(skills) && skills.length > 0 && (
                 <Stack
                   direction="row"

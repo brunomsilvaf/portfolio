@@ -22,7 +22,7 @@ import {
 import Translator from '../../i18n/Translator';
 import Reveal from '../common/Reveal';
 import ProfilePhoto from '../../assets/images/profile_photo.png';
-import { cvHref } from '../../data/SocialData';
+import useDownloadCv from '../cv/useDownloadCv';
 import WorkExperience from './work-experience';
 import Education from './education';
 import Skills from './skills';
@@ -32,6 +32,7 @@ import Hobbies from './hobbies';
 
 export default function MainPage() {
   const { t } = useTranslation();
+  const { downloadCv, loading } = useDownloadCv();
 
   return (
     <PageContainer>
@@ -72,9 +73,8 @@ export default function MainPage() {
             variant="text"
             size="large"
             startIcon={<DownloadIcon />}
-            href={cvHref}
-            target="_blank"
-            rel="noopener noreferrer"
+            onClick={downloadCv}
+            disabled={loading}
           >
             {t('actions.downloadCv')}
           </Button>
